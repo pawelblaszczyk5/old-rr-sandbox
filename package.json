@@ -10,7 +10,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "turbo run build",
-		"ci": "turbo run build format lint sort-package-json spellcheck typecheck --continue",
+		"ci": "turbo run build lint typecheck --continue && pnpm run \"/^(sort-package-json|spellcheck|format)$/\"",
 		"dev": "turbo run dev",
 		"format": "prettier \".\" --check",
 		"format:fix": "prettier \".\" --write",
