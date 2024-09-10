@@ -1,0 +1,1 @@
+# @moneytor/typescript-config
