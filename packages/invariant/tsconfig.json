@@ -1,7 +1,7 @@
 {
-	"extends": "@moneytor/typescript-config/no-build",
+	"extends": "@moneytor/typescript-config/node-build",
 	"compilerOptions": {
-		"lib": ["esnext"]
+		"rootDir": "src"
 	},
 	"include": ["src"]
 }

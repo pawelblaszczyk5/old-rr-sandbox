@@ -6,18 +6,13 @@ coverage/
 
 # artifacts
 .turbo/
-out/
 build/
 
 # misc
 .DS_Store
 *.pem
 pnpm-debug.log*
-sessions/
 
-# local SQLite files
-apps/website/local/*
-!apps/website/local/.gitkeep
 
 # env files
 .env

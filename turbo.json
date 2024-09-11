@@ -18,7 +18,7 @@
 		},
 		"typecheck": {
 			"dependsOn": ["^transit"],
-			"outputs": ["node_modules/.cache/tsbuildinfo/"]
+			"outputs": ["build/*.tsbuildinfo"]
 		},
 		"dev": {
 			"cache": false,
