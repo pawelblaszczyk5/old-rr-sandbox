@@ -8,9 +8,9 @@
 		"moduleDetection": "force",
 		"isolatedModules": true,
 		"incremental": true,
-		"module": "preserve",
-		"target": "esnext",
-		"noErrorTruncation": true,
+    "composite": true,
+		"module": "NodeNext",
+		"target": "ESNext",
 
 		"strict": true,
 		"noUnusedLocals": true,
@@ -26,6 +26,8 @@
 		"forceConsistentCasingInFileNames": true,
 		"useUnknownInCatchVariables": true,
 		"noUncheckedSideEffectImports": true,
-		"types": []
+
+		"types": [],
+		"noErrorTruncation": true
 	}
 }

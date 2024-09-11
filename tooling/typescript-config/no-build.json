@@ -1,9 +1,0 @@
-{
-	"$schema": "https://json.schemastore.org/tsconfig",
-	"extends": "./core.json",
-	"compilerOptions": {
-		"outDir": "${configDir}/node_modules/.cache/tsbuildinfo/",
-		"noEmit": true,
-		"composite": true
-	}
-}

@@ -9,6 +9,6 @@
 		"directory": "tooling/typescript-config"
 	},
 	"files": [
-		"core.json"
+		"node-build.json"
 	]
 }
