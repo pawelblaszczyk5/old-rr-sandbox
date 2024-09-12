@@ -8,6 +8,7 @@
 		"url": "https://github.com/pawelblaszczyk5/remix-effect-replicache-playground",
 		"directory": "packages/invariant"
 	},
+	"sideEffects": false,
 	"type": "module",
 	"exports": {
 		".": "./build/src/index.js"
