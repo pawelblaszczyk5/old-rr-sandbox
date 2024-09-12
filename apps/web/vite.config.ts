@@ -7,6 +7,8 @@ export default defineConfig({
 		remix({
 			future: {
 				unstable_lazyRouteDiscovery: true,
+				unstable_optimizeDeps: true,
+				unstable_singleFetch: true,
 				v3_fetcherPersist: true,
 				v3_relativeSplatPath: true,
 				v3_throwAbortReason: true,
@@ -18,6 +20,7 @@ export default defineConfig({
 				presets: ["@babel/preset-typescript"],
 			},
 			filter: /\.[jt]sx?$/u,
+			loader: "jsx",
 		}),
 	],
 });

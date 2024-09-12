@@ -31,6 +31,7 @@
 		"@moneytor/invariant": "workspace:*",
 		"@moneytor/typescript-config": "workspace:*",
 		"@remix-run/dev": "catalog:",
+		"@remix-run/server-runtime": "catalog:",
 		"@types/react": "catalog:",
 		"@types/react-dom": "catalog:",
 		"typescript": "catalog:",
