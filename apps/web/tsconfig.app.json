@@ -1,0 +1,8 @@
+{
+	"extends": "@moneytor/typescript-config/dom-no-build",
+	"compilerOptions": {
+		"jsx": "preserve",
+		"types": ["@remix-run/node", "node", "vite/client"]
+	},
+	"include": ["app"]
+}

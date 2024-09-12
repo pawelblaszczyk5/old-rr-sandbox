@@ -17,10 +17,10 @@
 			"outputs": ["build/"]
 		},
 		"typecheck": {
-			"dependsOn": ["^transit"],
-			"outputs": ["build/*.tsbuildinfo"]
+			"dependsOn": ["^transit"]
 		},
 		"dev": {
+			"dependsOn": ["^build"],
 			"cache": false,
 			"persistent": true
 		}

@@ -11,7 +11,7 @@
 	"scripts": {
 		"build": "turbo run build",
 		"ci": "turbo run build lint typecheck --continue && pnpm run \"/^(sort-package-json|spellcheck|format)$/\"",
-		"dev": "turbo run dev",
+		"dev": "turbo watch dev",
 		"format": "prettier \".\" --check",
 		"format:fix": "prettier \".\" --write",
 		"lint": "turbo run lint",

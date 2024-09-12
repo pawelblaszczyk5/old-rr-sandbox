@@ -1,0 +1,42 @@
+{
+	"name": "@moneytor/web",
+	"version": "0.0.0",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pawelblaszczyk5/moneytor",
+		"directory": "apps/web"
+	},
+	"type": "module",
+	"sideEffects": false,
+	"scripts": {
+		"build": "remix vite:build",
+		"dev": "remix vite:dev",
+		"lint": "eslint",
+		"lint:fix": "eslint --fix",
+		"preview": "remix-serve ./build/server/index.js",
+		"typecheck": "tsc --build"
+	},
+	"dependencies": {
+		"@remix-run/node": "catalog:",
+		"@remix-run/react": "catalog:",
+		"@remix-run/serve": "catalog:",
+		"isbot": "^5.1.17",
+		"react": "catalog:",
+		"react-dom": "catalog:"
+	},
+	"devDependencies": {
+		"@types/node": "catalog:",
+		"@moneytor/eslint-config": "workspace:*",
+		"@moneytor/invariant": "workspace:*",
+		"@moneytor/typescript-config": "workspace:*",
+		"@remix-run/dev": "catalog:",
+		"@types/react": "catalog:",
+		"@types/react-dom": "catalog:",
+		"typescript": "catalog:",
+		"vite": "^5.4.4",
+		"vite-plugin-babel": "^1.2.0",
+		"babel-plugin-react-compiler": "0.0.0-experimental-f1f288c-20240725",
+		"@babel/preset-typescript": "^7.24.7"
+	}
+}
