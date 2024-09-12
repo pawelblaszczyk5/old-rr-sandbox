@@ -9,8 +9,9 @@
 		"directory": "packages/invariant"
 	},
 	"type": "module",
-	"main": "./src/index.ts",
-	"types": "./src/index.ts",
+	"exports": {
+		".": "./build/src/index.js"
+	},
 	"scripts": {
 		"build": "tsc --noCheck",
 		"lint": "eslint",

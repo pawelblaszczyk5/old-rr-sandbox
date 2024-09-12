@@ -1,7 +1,4 @@
 {
 	"extends": "@moneytor/typescript-config/node-build",
-	"compilerOptions": {
-		"rootDir": "src"
-	},
 	"include": ["src"]
 }
