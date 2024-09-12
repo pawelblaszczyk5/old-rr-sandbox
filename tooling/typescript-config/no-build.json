@@ -2,7 +2,7 @@
 	"$schema": "https://json.schemastore.org/tsconfig",
 	"extends": "./base.json",
 	"compilerOptions": {
-		"outDir": "${configDir}/build/",
-		"declarationMap": true
+		"outDir": "${configDir}/node_modules/.cache/tsbuildinfo/",
+		"noEmit": true
 	}
 }
