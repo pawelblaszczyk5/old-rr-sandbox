@@ -7,5 +7,5 @@
 ## Features ranked by importance for MVP
 
 - [ ] Mercury
-  - [ ] test
+  - [ ] Mercury moon
 - [ ] Venus
