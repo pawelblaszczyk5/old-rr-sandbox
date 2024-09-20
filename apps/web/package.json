@@ -31,13 +31,12 @@
 		"@moneytor/invariant": "workspace:*",
 		"@moneytor/typescript-config": "workspace:*",
 		"@remix-run/dev": "catalog:",
-		"@remix-run/server-runtime": "catalog:",
 		"@types/node": "catalog:",
 		"@types/react": "catalog:",
 		"@types/react-dom": "catalog:",
 		"babel-plugin-react-compiler": "0.0.0-experimental-fe484b5-20240912",
 		"typescript": "catalog:",
-		"vite": "^5.4.6",
+		"vite": "^5.4.7",
 		"vite-plugin-babel": "^1.2.0"
 	}
 }
