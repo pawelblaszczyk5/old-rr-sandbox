@@ -41,7 +41,7 @@ It seems to be the most powerful platform for me now. They provide a lot of stuf
   - Packages structure - of course I'm going with the monorepo. I'd like to do some planning around it beforehand. It's one of the parts which I often find problematic and I didn't have a lot of experience in this area
   - Database schema - I've never really did any database management (planotes doesn't count tbh). I want to do something smarter here and think about it a bit beforehand
   - Testing - I kind of brushed off testing always. I think there'll be some stuff that'll be really worth testing. Stuff like CVR diffs in Replicache sounds like excellent use case for unit testing
-  - Backups - I know nothing about database backups - time to learn it
+  - Backups - I probably need to use something like Litestream, or maybe I'm fine with periodical backup
 - Homepage before login
   - I'm a bit bad at this so I'm not sure how this will turn out
   - Maybe use some animations/scroll-storytelling
@@ -59,7 +59,7 @@ It seems to be the most powerful platform for me now. They provide a lot of stuf
 - Expenses
   - Tracking - that's the simple part, basically a CRUD for a single expense that'll be added to the database. It'll be a bit like an event sourcing, but I'm fine with updating past records due to my architecture with synced/local data. Consider stuff like grouping multiple expenses together (this could work like Notion's pages grouping - actually ChatGPT made me realize that Notion is more of a parenting system, maybe I want both? Parenting for splitting receipt and grouping for multiple related e.g. all expenses from single trip), currency (I probably want to start with one default currency for workspace), tagging/category (should tags and categories be separate stuff? Categories would be a single select mandatory and tags more custom and multiple allowed), merchant
   - Querying - that's the complicated part. I want this to be super flexible - I really like how Notion handles databases. I have one view which is just default log of everything but I can create multiple views with saved/persisted queries. Example querying/filtering - date/time, value, category/tag, name, description, merchant, by parent
-  - Attachments - stuff like receipts and invoices could be attached to expense
+  - Attachments - stuff like receipts and invoices could be attached to expense (maybe after the MVP)
 - Realtime optimized sync and offline working
   - Replicache integration - self-explanatory
   - Prefetching/preloading - I want a lot of code to be loaded initially so every subsequent action is snappy. I still can make this lazy so user won't pay the cost - it'll just be loaded in the background after initial load happens
