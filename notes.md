@@ -34,7 +34,7 @@ It seems to be the most powerful platform for me now. They provide a lot of stuf
 
 ## MVP features
 
-<!-- cspell:ignore planotes, rocicorp -->
+<!-- cspell:ignore planotes, rocicorp, litestream -->
 
 - Behind the stage
   - ADRs - I want to track some of my decisions more precisely. I can learn a lot from reasoning on why I did something. When I need to change the decision later on I need to draw some conclusions - this way I'll get better as an architect
