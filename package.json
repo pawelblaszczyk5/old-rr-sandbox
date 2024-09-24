@@ -39,7 +39,7 @@
 	"pnpm": {
 		"peerDependencyRules": {
 			"allowedVersions": {
-				"eslint": "9.11.0"
+				"eslint": "9.11.1"
 			}
 		},
 		"allowedDeprecatedVersions": {
