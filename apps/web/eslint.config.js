@@ -21,11 +21,15 @@ export default [
 		},
 	},
 	{
-		files: ["app/routes/**/*.tsx", "app/root.tsx", "app/entry.server.tsx"],
+		files: ["app/entry.server.tsx"],
+		rules: { "import-x/no-default-export": "off" },
+	},
+	{
+		files: ["app/routes/**/*.tsx", "app/root.tsx"],
 		rules: {
 			"import-x/no-default-export": "off",
 			"react-refresh/only-export-components": [
-				"warn",
+				"error",
 				{
 					allowConstantExport: true,
 					allowExportNames: ["meta", "links", "headers", "loader", "action", "clientLoader", "clientAction"],
