@@ -14,8 +14,8 @@
 		".": "./build/src/index.js"
 	},
 	"scripts": {
-		"dev": "tsc --noCheck",
 		"build": "tsc --noCheck",
+		"dev": "tsc --noCheck",
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",
 		"typecheck": "tsc --noEmit"
