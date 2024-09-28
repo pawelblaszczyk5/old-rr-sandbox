@@ -20,7 +20,6 @@
 			"dependsOn": ["^transit"]
 		},
 		"dev": {
-			"dependsOn": ["^build"],
 			"cache": false,
 			"persistent": true
 		}
