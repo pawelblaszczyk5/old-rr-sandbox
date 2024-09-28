@@ -11,6 +11,8 @@ import reactNamingConvention from "eslint-plugin-react-naming-convention";
 import reactWebApi from "eslint-plugin-react-web-api";
 import react from "eslint-plugin-react-x";
 
+//  cspell:ignore innerhtml, textnodes, setstate
+
 const compat = new FlatCompat({
 	baseDirectory: import.meta.dirname,
 });
