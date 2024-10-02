@@ -26,7 +26,7 @@
 		"react-dom": "catalog:"
 	},
 	"devDependencies": {
-		"@babel/preset-typescript": "^7.24.7",
+		"@babel/preset-typescript": "^7.25.7",
 		"@moneytor/eslint-config": "workspace:*",
 		"@moneytor/invariant": "workspace:*",
 		"@moneytor/typescript-config": "workspace:*",
