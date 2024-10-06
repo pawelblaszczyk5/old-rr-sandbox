@@ -5,7 +5,7 @@
 	"description": "Shared TypeScript config",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/pawelblaszczyk5/remix-effect-replicache-playground",
+		"url": "https://github.com/pawelblaszczyk5/moneytor",
 		"directory": "tooling/typescript-config"
 	},
 	"files": [

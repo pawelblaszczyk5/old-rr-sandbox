@@ -5,7 +5,7 @@
 	"description": "Invariant utility function",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/pawelblaszczyk5/remix-effect-replicache-playground",
+		"url": "https://github.com/pawelblaszczyk5/moneytor",
 		"directory": "packages/invariant"
 	},
 	"sideEffects": false,
