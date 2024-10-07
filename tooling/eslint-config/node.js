@@ -16,7 +16,7 @@ export default tseslint.config(n.configs["flat/recommended"], {
 		"n/no-unsupported-features/es-syntax": [
 			"error",
 			{
-				/* cspell:ignore withresolvers */
+				/* cspell:words withresolvers */
 				ignores: ["promise-withresolvers"],
 			},
 		],

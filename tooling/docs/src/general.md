@@ -10,13 +10,13 @@ Replicache seems to be the best solution for realtime sync. It doesn't require a
 
 ### Remix
 
-<!-- cspell:ignore tanstack, vinxi -->
+<!-- cspell:words tanstack, vinxi -->
 
 It's the best framework for building React apps atm tbh. Next.js is Vercel framework and unstable. Tanstack Start is too much magic and based on Vinxi which I feel is kind of a dead end. They're building awesome stuff around React Router V7 and I'm really curious about their RSC stuff in the future. Also they give me a lot of flexibility of Vite and CSR vs SSR. The `clientLoader`/`clientAction` APIs are very well thought. I like their approach of building stuff and really like monthly planning.
 
 ### Effect
 
-<!-- cspell:ignore vizoo -->
+<!-- cspell:words vizoo -->
 
 I really like this library and I feel my last time with it (Vizoo) was too short to learn it shortcomings and feel it fully. They've got amazing stuff around Schema/SQL/AI etc. The type safety is awesome and Remix integration is manageable to pull off.
 
@@ -26,13 +26,13 @@ That was a thing I was wondering the longest about. In theory for this kind of a
 
 ### Fly.io
 
-<!-- cspell:ignore ootb, ollama -->
+<!-- cspell:words ootb, ollama -->
 
 It seems to be the most powerful platform for me now. They provide a lot of stuff ootb, but it's still pretty low-level and doesn't limit capabilities. I'll need to build some custom glue for stuff like deployments, preview environments etc., but I've already did this in the past and I think it's pretty manageable. They also have stuff like GPU where I'd like to host OLLAMA in the future for the AI capabilities.
 
 ## MVP features
 
-<!-- cspell:ignore planotes, rocicorp, litestream -->
+<!-- cspell:words planotes, rocicorp, litestream -->
 
 - Behind the stage
   - ADRs - I want to track some of my decisions more precisely. I can learn a lot from reasoning on why I did something. When I need to change the decision later on I need to draw some conclusions - this way I'll get better as an architect
