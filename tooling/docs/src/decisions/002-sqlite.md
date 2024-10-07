@@ -6,7 +6,7 @@ Status: accepted
 
 ## Context
 
-I need some storage for this app. Previously I often opted into using `SQLite` for database due to its ease of setup. You can easily start without any additional steps, you don't need any kind of Docker or other ways of local environment setup. It also makes the testing a lot easier, because you can spin database for specific test suite and fill it with needed data.
+I need some storage for this app. Previously I often opted into using `SQLite` for database due to its ease of setup. You can easily start without any additional steps, you don't need any kind of `Docker` or other ways of local environment setup. It also makes the testing a lot easier, because you can spin database for specific test suite and fill it with needed data.
 
 On the other hand, the needs of this app are much bigger than my usual small side-project applications. I want to store a lot of transactions in the database and use it as a kind of event sourcing. Moreover there could be a lot of operations on time-series data. Because of all of that I did some research around `TimescaleDB` which is specialized database for time-series stuff. It's packaged as a `PostgreSQL` extension and provides a lot of stuff specifically for applications like mine - some special kinds of averages, time aggregations, filling-in time-series data. Also, I'm going to use [`Replicache`](./001-replicache.md) there'll be a lot of transactions related stuff going on, which work much better in traditional database.
 
@@ -22,4 +22,4 @@ Some additional handling around `SQLite` will need to be done. While it's still 
 
 Also, often the `SQLite` database isn't possible to access during build step, which will make stuff like SSG harder. However, I don't think I'll need this in this application.
 
-There needs to be some careful consideration around point where migrating to `PostgreSQL` makes sense. I can't make this choice too late, because it'll be painful to migrate. And I can't make this decision too early or I'll be eaten by additional development costs. But I'm not sure whether this app will be finished, not to even mention scaling it. 
+There needs to be some careful consideration around point where migrating to `PostgreSQL` makes sense. I can't make this choice too late, because it'll be painful to migrate. And I can't make this decision too early or I'll be eaten by additional development costs. But I'm not sure whether this app will be finished, not to even mention scaling it.
