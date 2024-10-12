@@ -14,7 +14,7 @@
 		},
 		"build": {
 			"dependsOn": ["^build"],
-			"outputs": ["build/"]
+			"outputs": ["build/**"]
 		},
 		"typecheck": {
 			"dependsOn": ["^transit"]
@@ -22,6 +22,24 @@
 		"dev": {
 			"cache": false,
 			"persistent": true
+		},
+		"//#format": {
+			"dependsOn": []
+		},
+		"//#format:fix": {
+			"dependsOn": [],
+			"cache": false
+		},
+		"//#sort-package-json": {
+			"inputs": ["**/package.json"],
+			"dependsOn": []
+		},
+		"//#sort-package-json:fix": {
+			"dependsOn": [],
+			"cache": false
+		},
+		"//#spellcheck": {
+			"dependsOn": []
 		}
 	}
 }
