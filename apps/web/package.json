@@ -34,7 +34,7 @@
 		"@types/node": "catalog:",
 		"@types/react": "catalog:",
 		"@types/react-dom": "catalog:",
-		"babel-plugin-react-compiler": "0.0.0-experimental-b4db8c3-20241001",
+		"babel-plugin-react-compiler": "0.0.0-experimental-ad3b12a-20241011",
 		"typescript": "catalog:",
 		"vite": "^5.4.8",
 		"vite-plugin-babel": "^1.2.0"

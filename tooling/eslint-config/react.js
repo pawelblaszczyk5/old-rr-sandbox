@@ -1,6 +1,5 @@
 import tseslint from "typescript-eslint";
 import { FlatCompat } from "@eslint/eslintrc";
-import { fixupConfigRules } from "@eslint/compat";
 import reactRefresh from "eslint-plugin-react-refresh";
 import reactCompiler from "eslint-plugin-react-compiler";
 import jsxA11y from "eslint-plugin-jsx-a11y";
@@ -107,6 +106,7 @@ export default tseslint.config(
 		},
 		rules: {
 			"react-hooks-extra/no-direct-set-state-in-use-effect": "error",
+			"react-hooks-extra/no-direct-set-state-in-use-layout-effect": "error",
 			"react-hooks-extra/no-redundant-custom-hook": "error",
 			"react-hooks-extra/no-unnecessary-use-callback": "error",
 			"react-hooks-extra/no-unnecessary-use-memo": "error",
@@ -136,7 +136,7 @@ export default tseslint.config(
 			"@stylistic/jsx/jsx-self-closing-comp": ["error"],
 		},
 	},
-	...fixupConfigRules(compat.extends("plugin:react-hooks/recommended")),
+	...compat.extends("plugin:react-hooks/recommended"),
 	{
 		name: "react-hooks overrides",
 		rules: {
