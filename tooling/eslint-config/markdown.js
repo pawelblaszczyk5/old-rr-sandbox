@@ -1,7 +1,7 @@
 import tseslint from "typescript-eslint";
 import markdown from "@eslint/markdown";
 
-// cspell:words commonmark
+// cspell:ignore commonmark
 
 export default tseslint.config({
 	files: ["**/*.md"],
