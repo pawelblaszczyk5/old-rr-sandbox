@@ -4,5 +4,5 @@ import { config } from "@moneytor/css/config";
 
 export default createConfig({
 	...config,
-	include: ["./app/**/*.{ts,tsx}", "./node_modules/@moneytor/design-system/build/styles.css"],
+	include: ["./src/**/*.{ts,tsx}"],
 });

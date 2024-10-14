@@ -3,13 +3,10 @@
 	"extends": ["//"],
 	"tasks": {
 		"generate-stylesheet": {
-			"outputs": ["app/styles.css"]
-		},
-		"dev": {
-			"persistent": true
+			"outputs": ["build/styles.css"]
 		},
 		"typecheck": {
-			"outputs": ["node_modules/.cache/tsbuildinfo/"]
+			"outputs": ["build/*.tsbuildinfo"]
 		}
 	}
 }

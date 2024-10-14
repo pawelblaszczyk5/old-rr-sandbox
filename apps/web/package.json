@@ -20,6 +20,7 @@
 	},
 	"dependencies": {
 		"@moneytor/css": "workspace:*",
+		"@moneytor/design-system": "workspace:*",
 		"@remix-run/node": "catalog:",
 		"@remix-run/react": "catalog:",
 		"@remix-run/serve": "catalog:",
