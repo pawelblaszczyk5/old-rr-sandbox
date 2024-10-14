@@ -1,5 +1,4 @@
 import core from "@moneytor/eslint-config/core";
-import node from "@moneytor/eslint-config/node";
 
 export default [
 	{
