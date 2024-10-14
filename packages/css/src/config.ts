@@ -1,6 +1,130 @@
 import { createConfig } from "@tokenami/css";
 
 export const config = createConfig({
+	globalStyles: {
+		"*, *::before, *::after": {
+			border: 0,
+			boxSizing: "border-box",
+			margin: 0,
+			padding: 0,
+		},
+		"::-webkit-inner-spin-button, ::-webkit-outer-spin-button": {
+			height: "auto",
+		},
+		"::placeholder": {
+			color: "color-mix(in srgb, currentColor 50%, transparent)",
+			opacity: "1",
+		},
+		"::webkit-search-decoration": {
+			WebkitAppearance: "none",
+		},
+		":-moz-focusring": {
+			outline: "auto",
+		},
+		":-moz-ui-invalid": {
+			boxShadow: "none",
+		},
+		":root": {
+			/* set up default vars for var(text_*) tokens */
+			["--font-family" as string]: `ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`,
+			["--font-stretch" as string]: "normal",
+			["--font-style" as string]: "normal",
+			["--font-variant" as string]: "normal",
+			["--font-weight" as string]: "normal",
+		},
+		'[hidden]:not([hidden="until-found"])': {
+			display: "none",
+		},
+		a: {
+			color: "inherit",
+			textDecoration: "inherit",
+		},
+		"abbr:where([title])": {
+			textDecoration: "underline dotted",
+		},
+		"b, strong": {
+			fontWeight: "bolder",
+		},
+		body: {
+			lineHeight: "inherit",
+		},
+		"button, input, optgroup, select, textarea, ::file-selector-button": {
+			background: "transparent",
+			color: "inherit",
+			font: "inherit",
+			fontFeatureSettings: "inherit",
+			fontVariationSettings: "inherit",
+			letterSpacing: "inherit",
+		},
+		'button, input:where([type="button"]), input:where([type="reset"]), input:where([type="submit"]), ::file-selector-button ':
+			{
+				appearance: "button",
+			},
+		"code, kbd, samp, pre": {
+			["--font-family" as string]: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
+			fontFamily: "var(--font-family)",
+			fontFeatureSettings: "normal",
+			fontSize: "1em",
+			fontVariationSettings: "normal",
+		},
+		"h1, h2, h3, h4, h5, h6": {
+			fontSize: "inherit",
+			fontWeight: "inherit",
+		},
+		hr: {
+			borderTopWidth: "1px",
+			color: "inherit",
+			height: "0",
+		},
+		"html, :host": {
+			fontFamily: "var(--font-family)",
+			fontFeatureSettings: "normal",
+			fontVariationSettings: "normal",
+			lineHeight: 1.5,
+			tabSize: 4,
+			WebkitTapHighlightColor: "transparent",
+			WebkitTextSizeAdjust: "100%",
+		},
+		"img, svg, video, canvas, audio, iframe, embed, object": {
+			display: "block",
+			verticalAlign: "middle",
+		},
+		'input:where(:not([type="button"], [type="reset"], [type="submit"])), select, textarea': {
+			border: "1px solid",
+		},
+		"ol, ul, menu": {
+			listStyle: "none",
+		},
+		progress: {
+			verticalAlign: "baseline",
+		},
+		small: {
+			fontSize: "80%",
+		},
+		sub: {
+			bottom: "-0.25em",
+		},
+		"sub, sup": {
+			fontSize: "75%",
+			lineHeight: 0,
+			position: "relative",
+			verticalAlign: "baseline",
+		},
+		summary: {
+			display: "list-item",
+		},
+		sup: {
+			top: "-0.5em",
+		},
+		table: {
+			borderCollapse: "collapse",
+			borderColor: "inherit",
+			textIndent: 0,
+		},
+		textarea: {
+			resize: "vertical",
+		},
+	},
 	grid: "0.25rem",
 	include: [],
 	properties: {
