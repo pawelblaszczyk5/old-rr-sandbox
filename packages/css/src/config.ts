@@ -1,5 +1,7 @@
 import { createConfig } from "@tokenami/css";
 
+// cspell:ignore segoe, noto, menlo, consolas, focusring
+
 export const config = createConfig({
 	globalStyles: {
 		"*, *::before, *::after": {
