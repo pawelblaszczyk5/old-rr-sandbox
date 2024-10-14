@@ -71,10 +71,10 @@ importers:
   apps/web:
     dependencies:
       '@moneytor/css':
-        specifier: workspace:*
+        specifier: workspace:0.0.1
         version: link:../../packages/css
       '@moneytor/design-system':
-        specifier: workspace:*
+        specifier: workspace:0.0.1
         version: link:../../packages/design-system
       '@remix-run/node':
         specifier: 'catalog:'
@@ -102,13 +102,13 @@ importers:
         specifier: ^7.25.7
         version: 7.25.7(@babel/core@7.24.9)
       '@moneytor/eslint-config':
-        specifier: workspace:*
+        specifier: workspace:0.0.1
         version: link:../../tooling/eslint-config
       '@moneytor/invariant':
-        specifier: workspace:*
+        specifier: workspace:0.0.1
         version: link:../../packages/invariant
       '@moneytor/typescript-config':
-        specifier: workspace:*
+        specifier: workspace:0.0.1
         version: link:../../tooling/typescript-config
       '@remix-run/dev':
         specifier: 'catalog:'
@@ -148,10 +148,10 @@ importers:
         version: 0.0.68(@tokenami/dev@0.0.68(typescript@5.6.3))(typescript@5.6.3)
     devDependencies:
       '@moneytor/eslint-config':
-        specifier: workspace:*
+        specifier: workspace:0.0.1
         version: link:../../tooling/eslint-config
       '@moneytor/typescript-config':
-        specifier: workspace:*
+        specifier: workspace:0.0.1
         version: link:../../tooling/typescript-config
       typescript:
         specifier: 'catalog:'
@@ -160,7 +160,7 @@ importers:
   packages/design-system:
     dependencies:
       '@moneytor/css':
-        specifier: workspace:*
+        specifier: workspace:0.0.1
         version: link:../css
       '@tokenami/css':
         specifier: 'catalog:'
@@ -173,10 +173,10 @@ importers:
         version: 19.0.0-rc-09111202-20241011(react@19.0.0-rc-09111202-20241011)
     devDependencies:
       '@moneytor/eslint-config':
-        specifier: workspace:*
+        specifier: workspace:0.0.1
         version: link:../../tooling/eslint-config
       '@moneytor/typescript-config':
-        specifier: workspace:*
+        specifier: workspace:0.0.1
         version: link:../../tooling/typescript-config
       '@tokenami/dev':
         specifier: 'catalog:'
@@ -197,10 +197,10 @@ importers:
   packages/invariant:
     devDependencies:
       '@moneytor/eslint-config':
-        specifier: workspace:*
+        specifier: workspace:0.0.1
         version: link:../../tooling/eslint-config
       '@moneytor/typescript-config':
-        specifier: workspace:*
+        specifier: workspace:0.0.1
         version: link:../../tooling/typescript-config
       typescript:
         specifier: 'catalog:'
@@ -209,7 +209,7 @@ importers:
   tooling/docs:
     devDependencies:
       '@moneytor/eslint-config':
-        specifier: workspace:*
+        specifier: workspace:0.0.1
         version: link:../eslint-config
 
   tooling/eslint-config:

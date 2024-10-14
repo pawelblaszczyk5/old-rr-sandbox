@@ -22,14 +22,14 @@
 		"typecheck": "sed -i '' 's/CI: false/CI: true/' .tokenami/tokenami.env.d.ts; exit_code=0; tsc --noEmit || exit_code=$?; sed -i '' 's/CI: true/CI: false/' .tokenami/tokenami.env.d.ts; exit $exit_code"
 	},
 	"dependencies": {
-		"@moneytor/css": "workspace:*",
+		"@moneytor/css": "workspace:0.0.1",
 		"@tokenami/css": "catalog:",
 		"react": "catalog:",
 		"react-dom": "catalog:"
 	},
 	"devDependencies": {
-		"@moneytor/eslint-config": "workspace:*",
-		"@moneytor/typescript-config": "workspace:*",
+		"@moneytor/eslint-config": "workspace:0.0.1",
+		"@moneytor/typescript-config": "workspace:0.0.1",
 		"@tokenami/dev": "catalog:",
 		"@tokenami/ts-plugin": "catalog:",
 		"@types/react": "catalog:",

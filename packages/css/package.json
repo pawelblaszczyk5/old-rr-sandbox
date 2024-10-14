@@ -25,8 +25,8 @@
 		"@tokenami/css": "catalog:"
 	},
 	"devDependencies": {
-		"@moneytor/eslint-config": "workspace:*",
-		"@moneytor/typescript-config": "workspace:*",
+		"@moneytor/eslint-config": "workspace:0.0.1",
+		"@moneytor/typescript-config": "workspace:0.0.1",
 		"typescript": "catalog:"
 	}
 }

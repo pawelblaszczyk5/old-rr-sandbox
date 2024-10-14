@@ -19,8 +19,8 @@
 		"typecheck": "sed -i '' 's/CI: false/CI: true/' .tokenami/tokenami.env.d.ts; exit_code=0; tsc --build || exit_code=$?; sed -i '' 's/CI: true/CI: false/' .tokenami/tokenami.env.d.ts; exit $exit_code"
 	},
 	"dependencies": {
-		"@moneytor/css": "workspace:*",
-		"@moneytor/design-system": "workspace:*",
+		"@moneytor/css": "workspace:0.0.1",
+		"@moneytor/design-system": "workspace:0.0.1",
 		"@remix-run/node": "catalog:",
 		"@remix-run/react": "catalog:",
 		"@remix-run/serve": "catalog:",
@@ -31,9 +31,9 @@
 	},
 	"devDependencies": {
 		"@babel/preset-typescript": "^7.25.7",
-		"@moneytor/eslint-config": "workspace:*",
-		"@moneytor/invariant": "workspace:*",
-		"@moneytor/typescript-config": "workspace:*",
+		"@moneytor/eslint-config": "workspace:0.0.1",
+		"@moneytor/invariant": "workspace:0.0.1",
+		"@moneytor/typescript-config": "workspace:0.0.1",
 		"@remix-run/dev": "catalog:",
 		"@tokenami/dev": "catalog:",
 		"@tokenami/ts-plugin": "catalog:",

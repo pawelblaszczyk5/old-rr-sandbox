@@ -14,6 +14,6 @@
 		"lint:fix": "eslint --fix"
 	},
 	"devDependencies": {
-		"@moneytor/eslint-config": "workspace:*"
+		"@moneytor/eslint-config": "workspace:0.0.1"
 	}
 }
