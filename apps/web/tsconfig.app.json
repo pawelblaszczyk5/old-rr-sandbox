@@ -2,7 +2,8 @@
 	"extends": "@moneytor/typescript-config/dom-no-build",
 	"compilerOptions": {
 		"jsx": "preserve",
-		"types": ["@remix-run/node", "node", "vite/client"]
+		"types": ["@remix-run/node", "node", "vite/client"],
+		"plugins": [{ "name": "@tokenami/ts-plugin" }]
 	},
-	"include": ["app"]
+	"include": ["app", ".tokenami/tokenami.config.ts", ".tokenami/tokenami.env.d.ts"]
 }

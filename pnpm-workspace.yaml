@@ -8,6 +8,9 @@ catalog:
   "@remix-run/node": ^2.13.1
   "@remix-run/react": ^2.13.1
   "@remix-run/serve": ^2.13.1
+  "@tokenami/css": ^0.0.68
+  "@tokenami/dev": ^0.0.68
+  "@tokenami/ts-plugin": ^0.0.68
   "@types/node": ^22.7.5
   react: 19.0.0-rc-09111202-20241011
   react-dom: 19.0.0-rc-09111202-20241011

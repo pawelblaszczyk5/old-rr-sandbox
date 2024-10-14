@@ -10,7 +10,9 @@
 		"multitenancy",
 		"pipeable",
 		"replicache",
+		"stylesheet",
 		"taze",
+		"tokenami",
 		"tseslint",
 		"typecheck",
 		"unopinionated"

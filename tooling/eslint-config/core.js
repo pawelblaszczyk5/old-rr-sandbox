@@ -341,6 +341,7 @@ export default tseslint.config(
 						Args: true,
 						args: true,
 						ctx: true,
+						env: true,
 						props: true,
 						dir: true,
 						rel: true,

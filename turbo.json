@@ -6,10 +6,10 @@
 			"dependsOn": ["^transit"]
 		},
 		"lint": {
-			"dependsOn": ["^transit"]
+			"dependsOn": ["^transit", "^build"]
 		},
 		"lint:fix": {
-			"dependsOn": ["^transit"],
+			"dependsOn": ["^transit", "^build"],
 			"cache": false
 		},
 		"build": {
@@ -17,11 +17,11 @@
 			"outputs": ["build/**"]
 		},
 		"typecheck": {
-			"dependsOn": ["^transit"]
+			"dependsOn": ["^transit", "^build"]
 		},
 		"dev": {
-			"cache": false,
-			"persistent": true
+			"dependsOn": [],
+			"cache": false
 		},
 		"//#format": {
 			"dependsOn": []

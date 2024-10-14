@@ -2,8 +2,25 @@
 	"$schema": "https://turbo.build/schema.json",
 	"extends": ["//"],
 	"tasks": {
+		"generate-stylesheet": {
+			"dependsOn": ["@moneytor/css#build"],
+			"outputs": ["app/styles.css"]
+		},
+		"build": {
+			"dependsOn": ["^build", "generate-stylesheet"]
+		},
+		"dev": {
+			"cache": false,
+			"persistent": true
+		},
 		"typecheck": {
 			"outputs": ["node_modules/.cache/tsbuildinfo/"]
+		},
+		"lint": {
+			"dependsOn": ["^transit", "^build", "generate-stylesheet"]
+		},
+		"lint:fix": {
+			"dependsOn": ["^transit", "^build", "generate-stylesheet"]
 		}
 	}
 }

@@ -11,16 +11,19 @@
 	"type": "module",
 	"scripts": {
 		"build": "remix vite:build",
-		"dev": "remix vite:dev",
+		"dev": "pnpm run generate-stylesheet --watch & remix vite:dev",
+		"generate-stylesheet": "tokenami --output ./app/styles.css",
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",
 		"preview": "remix-serve ./build/server/index.js",
-		"typecheck": "tsc --build"
+		"typecheck": "sed -i '' 's/CI: false/CI: true/' .tokenami/tokenami.env.d.ts; exit_code=0; tsc --build || exit_code=$?; sed -i '' 's/CI: true/CI: false/' .tokenami/tokenami.env.d.ts; exit $exit_code"
 	},
 	"dependencies": {
+		"@moneytor/css": "workspace:*",
 		"@remix-run/node": "catalog:",
 		"@remix-run/react": "catalog:",
 		"@remix-run/serve": "catalog:",
+		"@tokenami/css": "catalog:",
 		"isbot": "^5.1.17",
 		"react": "catalog:",
 		"react-dom": "catalog:"
@@ -31,6 +34,8 @@
 		"@moneytor/invariant": "workspace:*",
 		"@moneytor/typescript-config": "workspace:*",
 		"@remix-run/dev": "catalog:",
+		"@tokenami/dev": "catalog:",
+		"@tokenami/ts-plugin": "catalog:",
 		"@types/node": "catalog:",
 		"@types/react": "catalog:",
 		"@types/react-dom": "catalog:",
