@@ -21,6 +21,7 @@
 	"dependencies": {
 		"@moneytor/css": "workspace:0.0.1",
 		"@moneytor/design-system": "workspace:0.0.1",
+		"@moneytor/invariant": "workspace:0.0.1",
 		"@remix-run/node": "catalog:",
 		"@remix-run/react": "catalog:",
 		"@remix-run/serve": "catalog:",
@@ -32,7 +33,6 @@
 	"devDependencies": {
 		"@babel/preset-typescript": "^7.25.7",
 		"@moneytor/eslint-config": "workspace:0.0.1",
-		"@moneytor/invariant": "workspace:0.0.1",
 		"@moneytor/typescript-config": "workspace:0.0.1",
 		"@remix-run/dev": "catalog:",
 		"@tokenami/dev": "catalog:",

@@ -4,8 +4,18 @@
 	"ignorePaths": ["pnpm-lock.yaml", "**.svg", ".git/", ".gitignore", ".vscode/", "./patches/"],
 	"dictionaries": ["lorem-ipsum"],
 	"useGitignore": true,
-	"words": ["moneytor", "multitenancy", "stylesheet", "tokenami", "typecheck", "unopinionated"],
+	"words": [
+		"codeowner",
+		"commonality",
+		"moneytor",
+		"multitenancy",
+		"pawelblaszczyk",
+		"stylesheet",
+		"tokenami",
+		"typecheck",
+		"unopinionated"
+	],
 	"enableGlobDot": true,
 	"enableFiletypes": ["dockerfile", "github-actions-workflow"],
-	"ignoreWords": ["jsxdev", "isbot", "taze", "tseslint", "pipeable", "replicache"]
+	"ignoreWords": ["commonalityco", "isbot", "jsxdev", "nuqs", "pipeable", "replicache", "taze", "tseslint", "xyflow"]
 }

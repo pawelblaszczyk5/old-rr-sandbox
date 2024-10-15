@@ -43,6 +43,12 @@
 		},
 		"//#spellcheck": {
 			"dependsOn": []
+		},
+		"//#commonality:check": {
+			"dependsOn": []
+		},
+		"//#commonality:constrain": {
+			"dependsOn": []
 		}
 	}
 }

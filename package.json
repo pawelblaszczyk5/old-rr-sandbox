@@ -10,7 +10,10 @@
 	"type": "module",
 	"scripts": {
 		"build": "turbo run build",
-		"ci": "turbo run build lint typecheck sort-package-json spellcheck format --continue",
+		"ci": "turbo run build lint typecheck sort-package-json spellcheck format commonality:check commonality:constrain --continue",
+		"commonality:check": "commonality check",
+		"commonality:constrain": "commonality constrain",
+		"commonality:studio": "commonality studio",
 		"dev": "turbo watch dev",
 		"format": "prettier \".\" --check",
 		"format:fix": "prettier \".\" --write",
@@ -23,6 +26,9 @@
 		"update-dependencies": "taze major --write --interactive --recursive --includeLocked --force"
 	},
 	"devDependencies": {
+		"@commonalityco/studio": "^0.2.57",
+		"commonality": "^0.2.63",
+		"commonality-checks-recommended": "^0.0.40",
 		"cspell": "^8.15.2",
 		"prettier": "^3.3.3",
 		"sort-package-json": "^2.10.1",
@@ -48,8 +54,15 @@
 		"overrides": {
 			"@types/react": "catalog:",
 			"@types/react-dom": "catalog:",
+			"@xyflow/react": "-",
+			"@xyflow/system": "-",
+			"framer-motion": "-",
+			"jotai": "-",
+			"lz-string": "-",
+			"nuqs": "-",
 			"react": "catalog:",
-			"react-dom": "catalog:"
+			"react-dom": "catalog:",
+			"socket.io-client": "-"
 		},
 		"patchedDependencies": {
 			"eslint-plugin-import-x": "patches/eslint-plugin-import-x.patch"
