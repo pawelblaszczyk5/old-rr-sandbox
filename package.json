@@ -2,7 +2,6 @@
 	"name": "@moneytor/root",
 	"version": "0.0.1",
 	"private": true,
-	"description": "Root workspace",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/pawelblaszczyk5/moneytor"
@@ -26,9 +25,9 @@
 		"update-dependencies": "taze major --write --interactive --recursive --includeLocked --force"
 	},
 	"devDependencies": {
-		"@commonalityco/studio": "^0.2.57",
-		"commonality": "^0.2.63",
-		"commonality-checks-recommended": "^0.0.40",
+		"@moneytor/commonality": "workspace:0.0.1",
+		"commonality": "catalog:",
+		"commonality-checks-recommended": "catalog:",
 		"cspell": "^8.15.2",
 		"prettier": "^3.3.3",
 		"sort-package-json": "^2.10.1",

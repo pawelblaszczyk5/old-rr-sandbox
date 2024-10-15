@@ -30,6 +30,12 @@ catalogs:
     '@types/node':
       specifier: ^22.7.5
       version: 22.7.5
+    commonality:
+      specifier: ^0.2.63
+      version: 0.2.63
+    commonality-checks-recommended:
+      specifier: ^0.0.40
+      version: 0.0.40
     typescript:
       specifier: ^5.6.3
       version: 5.6.3
@@ -56,14 +62,14 @@ importers:
 
   .:
     devDependencies:
-      '@commonalityco/studio':
-        specifier: ^0.2.57
-        version: 0.2.57(react-dom@19.0.0-rc-09111202-20241011(react@19.0.0-rc-09111202-20241011))(react@19.0.0-rc-09111202-20241011)
+      '@moneytor/commonality':
+        specifier: workspace:0.0.1
+        version: link:tooling/commonality
       commonality:
-        specifier: ^0.2.63
+        specifier: 'catalog:'
         version: 0.2.63(react-dom@19.0.0-rc-09111202-20241011(react@19.0.0-rc-09111202-20241011))(react@19.0.0-rc-09111202-20241011)
       commonality-checks-recommended:
-        specifier: ^0.0.40
+        specifier: 'catalog:'
         version: 0.0.40(commonality@0.2.63(react-dom@19.0.0-rc-09111202-20241011(react@19.0.0-rc-09111202-20241011))(react@19.0.0-rc-09111202-20241011))
       cspell:
         specifier: ^8.15.2
@@ -218,6 +224,28 @@ importers:
       '@moneytor/typescript-config':
         specifier: workspace:0.0.1
         version: link:../../tooling/typescript-config
+      typescript:
+        specifier: 'catalog:'
+        version: 5.6.3
+
+  tooling/commonality:
+    dependencies:
+      commonality:
+        specifier: 'catalog:'
+        version: 0.2.63(react-dom@19.0.0-rc-09111202-20241011(react@19.0.0-rc-09111202-20241011))(react@19.0.0-rc-09111202-20241011)
+      commonality-checks-recommended:
+        specifier: 'catalog:'
+        version: 0.0.40(commonality@0.2.63(react-dom@19.0.0-rc-09111202-20241011(react@19.0.0-rc-09111202-20241011))(react@19.0.0-rc-09111202-20241011))
+    devDependencies:
+      '@moneytor/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
+      '@moneytor/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+      '@types/node':
+        specifier: 'catalog:'
+        version: 22.7.5
       typescript:
         specifier: 'catalog:'
         version: 5.6.3

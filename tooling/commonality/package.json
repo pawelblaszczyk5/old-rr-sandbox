@@ -1,0 +1,30 @@
+{
+	"name": "@moneytor/commonality",
+	"version": "0.0.1",
+	"private": true,
+	"description": "Commonality checks package",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pawelblaszczyk5/moneytor",
+		"directory": "tooling/commonality"
+	},
+	"type": "module",
+	"exports": {
+		"./has-description-field": "./src/has-description-field.ts"
+	},
+	"scripts": {
+		"lint": "eslint",
+		"lint:fix": "eslint --fix",
+		"typecheck": "tsc"
+	},
+	"dependencies": {
+		"commonality": "catalog:",
+		"commonality-checks-recommended": "catalog:"
+	},
+	"devDependencies": {
+		"@moneytor/eslint-config": "workspace:*",
+		"@moneytor/typescript-config": "workspace:*",
+		"@types/node": "catalog:",
+		"typescript": "catalog:"
+	}
+}
