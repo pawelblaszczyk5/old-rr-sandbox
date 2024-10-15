@@ -7,10 +7,13 @@
 			"recommended/valid-package-name",
 			"recommended/unique-dependency-types",
 			"recommended/matching-dev-peer-versions",
-			"recommended/consistent-external-version",
 			"recommended/extends-repository-field",
 			"@moneytor/commonality/has-description-field"
 		]
 	},
-	"constraints": {}
+	"constraints": {
+		"*": {
+			"disallow": ["application"]
+		}
+	}
 }
