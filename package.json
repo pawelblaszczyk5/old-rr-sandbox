@@ -64,8 +64,8 @@
 			"socket.io-client": "-"
 		},
 		"patchedDependencies": {
-			"eslint-plugin-import-x": "patches/eslint-plugin-import-x.patch",
-			"@commonalityco/studio": "patches/@commonalityco__studio.patch"
+			"@commonalityco/studio": "patches/@commonalityco__studio.patch",
+			"eslint-plugin-import-x": "patches/eslint-plugin-import-x.patch"
 		}
 	}
 }
