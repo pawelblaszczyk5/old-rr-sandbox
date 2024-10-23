@@ -32,7 +32,7 @@
 		"react-dom": "catalog:"
 	},
 	"devDependencies": {
-		"@babel/preset-typescript": "^7.25.7",
+		"@babel/preset-typescript": "^7.25.9",
 		"@moneytor/eslint-config": "workspace:0.0.1",
 		"@moneytor/typescript-config": "workspace:0.0.1",
 		"@remix-run/dev": "catalog:",
@@ -41,9 +41,9 @@
 		"@types/node": "catalog:",
 		"@types/react": "catalog:",
 		"@types/react-dom": "catalog:",
-		"babel-plugin-react-compiler": "0.0.0-experimental-ad3b12a-20241011",
+		"babel-plugin-react-compiler": "19.0.0-beta-8a03594-20241020",
 		"typescript": "catalog:",
-		"vite": "^5.4.9",
+		"vite": "^5.4.10",
 		"vite-plugin-babel": "^1.2.0"
 	}
 }

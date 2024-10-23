@@ -28,17 +28,17 @@
 		"@moneytor/commonality": "workspace:0.0.1",
 		"commonality": "catalog:",
 		"commonality-checks-recommended": "catalog:",
-		"cspell": "^8.15.2",
+		"cspell": "^8.15.4",
 		"prettier": "^3.3.3",
 		"sort-package-json": "^2.10.1",
 		"taze": "^0.17.2",
-		"turbo": "2.1.3",
+		"turbo": "2.2.3",
 		"typescript": "catalog:"
 	},
-	"packageManager": "pnpm@9.12.1",
+	"packageManager": "pnpm@9.12.2",
 	"engines": {
 		"node": "22.9.0",
-		"pnpm": "9.12.1"
+		"pnpm": "9.12.2"
 	},
 	"pnpm": {
 		"peerDependencyRules": {

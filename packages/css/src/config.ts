@@ -3,6 +3,7 @@ import { createConfig } from "@tokenami/css";
 // cspell:ignore segoe, noto, menlo, consolas, focusring
 
 export const config = createConfig({
+	aliases: {},
 	globalStyles: {
 		"*, *::before, *::after": {
 			border: 0,
@@ -296,5 +297,8 @@ export const config = createConfig({
 		transition: {},
 		weight: {},
 		z: {},
+	},
+	themeSelector: () => {
+		return ":root";
 	},
 });
