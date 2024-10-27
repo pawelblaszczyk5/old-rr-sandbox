@@ -11,7 +11,8 @@
 	"type": "module",
 	"exports": {
 		"./has-description-field": "./src/has-description-field.ts",
-		"./use-catalog-protocol": "./src/use-catalog-protocol.ts"
+		"./use-catalog-protocol": "./src/use-catalog-protocol.ts",
+		"./use-exact-workspace-version": "./src/use-exact-workspace-version.ts"
 	},
 	"scripts": {
 		"lint": "eslint",
@@ -23,8 +24,8 @@
 		"commonality-checks-recommended": "catalog:"
 	},
 	"devDependencies": {
-		"@moneytor/eslint-config": "workspace:*",
-		"@moneytor/typescript-config": "workspace:*",
+		"@moneytor/eslint-config": "workspace:0.0.1",
+		"@moneytor/typescript-config": "workspace:0.0.1",
 		"@types/node": "catalog:",
 		"typescript": "catalog:"
 	}
