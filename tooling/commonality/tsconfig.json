@@ -1,4 +1,7 @@
 {
 	"extends": "@moneytor/typescript-config/node-no-build",
-	"include": ["src"]
+	"include": ["src"],
+	"compilerOptions": {
+		"types": ["node"]
+	}
 }
