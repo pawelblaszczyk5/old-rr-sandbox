@@ -4,7 +4,7 @@ import { json } from "commonality";
 
 export default {
 	level: "error",
-	message: "Dependencies shared across workspaces must use catalog: protocol",
+	message: 'Dependencies shared across workspaces must use "catalog:" protocol',
 	validate: async (ctx) => {
 		const currentWorkspace = await json<PackageJson>(ctx.package.path, "package.json").get();
 
