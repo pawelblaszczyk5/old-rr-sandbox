@@ -3,7 +3,7 @@
 	"extends": ["//"],
 	"tasks": {
 		"typecheck": {
-			"outputs": ["node_modules/.cache/tsbuildinfo/"]
+			"outputs": ["build/*.tsbuildinfo"]
 		}
 	}
 }

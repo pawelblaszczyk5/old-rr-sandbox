@@ -10,14 +10,15 @@
 	},
 	"type": "module",
 	"exports": {
-		"./has-description-field": "./src/has-description-field.ts",
-		"./use-catalog-protocol": "./src/use-catalog-protocol.ts",
-		"./use-exact-workspace-version": "./src/use-exact-workspace-version.ts"
+		"./has-description-field": "./build/src/has-description-field.js",
+		"./use-catalog-protocol": "./build/src/use-catalog-protocol.js",
+		"./use-exact-workspace-version": "./build/src/use-exact-workspace-version.js"
 	},
 	"scripts": {
+		"build": "tsc --noCheck",
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",
-		"typecheck": "tsc"
+		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
 		"commonality": "catalog:",

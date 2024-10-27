@@ -45,7 +45,7 @@
 			"dependsOn": []
 		},
 		"//#commonality:check": {
-			"dependsOn": []
+			"dependsOn": ["^build"]
 		},
 		"//#commonality:constrain": {
 			"dependsOn": []
