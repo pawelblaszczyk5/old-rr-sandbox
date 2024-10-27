@@ -1,4 +1,4 @@
-import type { Check } from "commonality";
+import type { Check, PackageJson } from "commonality";
 
 import { diff, json } from "commonality";
 
@@ -7,7 +7,7 @@ export const hasPackageJsonField = (name: string) => {
 		level: "error",
 		message: `Package must have a "${name}" field in package.json`,
 		validate: async (ctx) => {
-			const packageJson = await json(ctx.package.path, "package.json").get();
+			const packageJson = await json<PackageJson>(ctx.package.path, "package.json").get();
 
 			if (!packageJson) {
 				return {
