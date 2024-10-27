@@ -241,10 +241,10 @@ importers:
         version: 0.0.40(commonality@0.2.63(react-dom@19.0.0-rc-28668d39-20241023(react@19.0.0-rc-28668d39-20241023))(react@19.0.0-rc-28668d39-20241023))
     devDependencies:
       '@moneytor/eslint-config':
-        specifier: workspace:*
+        specifier: workspace:0.0.1
         version: link:../eslint-config
       '@moneytor/typescript-config':
-        specifier: workspace:*
+        specifier: workspace:0.0.1
         version: link:../typescript-config
       '@types/node':
         specifier: 'catalog:'
