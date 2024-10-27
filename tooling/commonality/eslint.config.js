@@ -13,7 +13,7 @@ export default [
 	...core,
 	...node,
 	{
-		files: ["src/has-description-field.ts"],
+		files: ["src/*.ts"],
 		rules: {
 			"import-x/no-default-export": "off",
 		},

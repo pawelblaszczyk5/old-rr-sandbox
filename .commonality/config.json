@@ -8,7 +8,8 @@
 			"recommended/unique-dependency-types",
 			"recommended/matching-dev-peer-versions",
 			"recommended/extends-repository-field",
-			"@moneytor/commonality/has-description-field"
+			"@moneytor/commonality/has-description-field",
+			"@moneytor/commonality/use-catalog-protocol"
 		]
 	},
 	"constraints": {
