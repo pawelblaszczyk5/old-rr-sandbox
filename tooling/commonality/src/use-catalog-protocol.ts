@@ -42,7 +42,7 @@ export default {
 					return workspace !== undefined;
 				})
 				.flatMap((workspace) => {
-					return [...Object.keys(workspace.dependencies ?? {}), ...Object.keys(workspace.devDependencies ?? {})];
+					return Object.keys({ ...workspace.dependencies, ...workspace.devDependencies });
 				}),
 		);
 
