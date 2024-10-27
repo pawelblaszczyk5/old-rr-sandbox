@@ -32,7 +32,7 @@
 		"react-dom": "catalog:"
 	},
 	"devDependencies": {
-		"@babel/preset-typescript": "^7.25.9",
+		"@babel/preset-typescript": "^7.26.0",
 		"@moneytor/eslint-config": "workspace:0.0.1",
 		"@moneytor/typescript-config": "workspace:0.0.1",
 		"@remix-run/dev": "catalog:",
