@@ -30,7 +30,7 @@ jobs:
         uses: ./.github/composite-actions/setup
 
       - name: Run
-        run: pnpm build
+        run: pnpm run build
 
   lint:
     name: 🔬 Lint
@@ -44,7 +44,7 @@ jobs:
         uses: ./.github/composite-actions/setup
 
       - name: Run
-        run: pnpm lint
+        run: pnpm run lint
 
   typecheck:
     name: 🌀 Typecheck
@@ -58,7 +58,7 @@ jobs:
         uses: ./.github/composite-actions/setup
 
       - name: Run
-        run: pnpm typecheck
+        run: pnpm run typecheck
 
   format:
     name: 🔍 Format
