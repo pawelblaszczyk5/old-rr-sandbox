@@ -35,10 +35,10 @@
 		"turbo": "2.2.3",
 		"typescript": "catalog:"
 	},
-	"packageManager": "pnpm@9.12.2",
+	"packageManager": "pnpm@9.12.3",
 	"engines": {
 		"node": "22.9.0",
-		"pnpm": "9.12.2"
+		"pnpm": "9.12.3"
 	},
 	"pnpm": {
 		"peerDependencyRules": {
