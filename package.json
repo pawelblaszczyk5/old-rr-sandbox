@@ -28,7 +28,7 @@
 		"@moneytor/commonality": "workspace:0.0.1",
 		"commonality": "catalog:",
 		"commonality-checks-recommended": "catalog:",
-		"cspell": "^8.15.4",
+		"cspell": "^8.15.5",
 		"prettier": "^3.3.3",
 		"sort-package-json": "^2.10.1",
 		"taze": "^0.17.2",

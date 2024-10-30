@@ -11,7 +11,7 @@ catalog:
   "@tokenami/css": ^0.0.69
   "@tokenami/dev": ^0.0.69
   "@tokenami/ts-plugin": ^0.0.69
-  "@types/node": ^22.8.1
+  "@types/node": ^22.8.4
   commonality: ^0.2.63
   commonality-checks-recommended: ^0.0.40
   react: 19.0.0-rc-28668d39-20241023
