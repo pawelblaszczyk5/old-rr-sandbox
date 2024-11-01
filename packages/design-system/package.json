@@ -15,7 +15,7 @@
 	},
 	"scripts": {
 		"build": "tsc --jsx react-jsx --noCheck",
-		"dev": "pnpm run generate-stylesheet & tsc --jsx react-jsxdev --noCheck",
+		"dev": "pnpm run generate-stylesheet && tsc --jsx react-jsxdev --noCheck",
 		"generate-stylesheet": "tokenami --output ./build/styles.css",
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",
