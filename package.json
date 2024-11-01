@@ -51,17 +51,17 @@
 		},
 		"allowNonAppliedPatches": false,
 		"overrides": {
+			"@commonalityco/studio>@xyflow/react": "-",
+			"@commonalityco/studio>@xyflow/system": "-",
+			"@commonalityco/studio>framer-motion": "-",
+			"@commonalityco/studio>jotai": "-",
+			"@commonalityco/studio>lz-string": "-",
+			"@commonalityco/studio>nuqs": "-",
+			"@commonalityco/studio>socket.io-client": "-",
 			"@types/react": "catalog:",
 			"@types/react-dom": "catalog:",
-			"@xyflow/react": "-",
-			"@xyflow/system": "-",
-			"framer-motion": "-",
-			"jotai": "-",
-			"lz-string": "-",
-			"nuqs": "-",
 			"react": "catalog:",
-			"react-dom": "catalog:",
-			"socket.io-client": "-"
+			"react-dom": "catalog:"
 		},
 		"patchedDependencies": {
 			"@commonalityco/studio": "patches/@commonalityco__studio.patch",

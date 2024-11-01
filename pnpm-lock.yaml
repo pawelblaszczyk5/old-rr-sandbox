@@ -43,15 +43,15 @@ catalogs:
 overrides:
   '@types/react': npm:types-react@19.0.0-rc.1
   '@types/react-dom': npm:types-react-dom@19.0.0-rc.1
-  '@xyflow/react': '-'
-  '@xyflow/system': '-'
-  framer-motion: '-'
-  jotai: '-'
-  lz-string: '-'
-  nuqs: '-'
+  '@commonalityco/studio>@xyflow/react': '-'
+  '@commonalityco/studio>@xyflow/system': '-'
+  '@commonalityco/studio>framer-motion': '-'
+  '@commonalityco/studio>jotai': '-'
+  '@commonalityco/studio>lz-string': '-'
+  '@commonalityco/studio>nuqs': '-'
   react: 19.0.0-rc-28668d39-20241023
   react-dom: 19.0.0-rc-28668d39-20241023
-  socket.io-client: '-'
+  '@commonalityco/studio>socket.io-client': '-'
 
 patchedDependencies:
   '@commonalityco/studio':
