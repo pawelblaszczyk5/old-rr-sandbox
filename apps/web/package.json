@@ -20,6 +20,7 @@
 		"typecheck": "sed -i '' 's/CI: false/CI: true/' .tokenami/tokenami.env.d.ts; exit_code=0; tsc --build || exit_code=$?; sed -i '' 's/CI: true/CI: false/' .tokenami/tokenami.env.d.ts; exit $exit_code"
 	},
 	"dependencies": {
+		"@babel/plugin-syntax-jsx": "^7.25.9",
 		"@moneytor/css": "workspace:0.0.1",
 		"@moneytor/design-system": "workspace:0.0.1",
 		"@moneytor/invariant": "workspace:0.0.1",

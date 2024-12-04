@@ -32,7 +32,7 @@
 		"prettier": "^3.3.3",
 		"sort-package-json": "^2.10.1",
 		"taze": "^0.18.0",
-		"turbo": "2.2.3",
+		"turbo": "2.3.3",
 		"typescript": "catalog:"
 	},
 	"packageManager": "pnpm@9.12.3",
@@ -64,8 +64,7 @@
 			"react-dom": "catalog:"
 		},
 		"patchedDependencies": {
-			"@commonalityco/studio": "patches/@commonalityco__studio.patch",
-			"eslint-plugin-import-x": "patches/eslint-plugin-import-x.patch"
+			"@commonalityco/studio": "patches/@commonalityco__studio.patch"
 		}
 	}
 }

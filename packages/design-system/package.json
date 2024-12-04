@@ -11,11 +11,11 @@
 	"sideEffects": false,
 	"type": "module",
 	"exports": {
-		"./button": "./build/src/button.js"
+		"./button": "./build/src/button.jsx"
 	},
 	"scripts": {
-		"build": "tsc --jsx react-jsx --noCheck",
-		"dev": "pnpm run generate-stylesheet && tsc --jsx react-jsxdev --noCheck",
+		"build": "tsc --noCheck",
+		"dev": "pnpm run generate-stylesheet && tsc --noCheck",
 		"generate-stylesheet": "tokenami --output ./build/styles.css",
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",

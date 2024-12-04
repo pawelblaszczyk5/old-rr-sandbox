@@ -16,7 +16,10 @@ export default defineConfig({
 		}),
 		babel({
 			babelConfig: {
-				plugins: [["babel-plugin-react-compiler", {}]],
+				plugins: [
+					["babel-plugin-react-compiler", {}],
+					["@babel/plugin-syntax-jsx", {}],
+				],
 				presets: ["@babel/preset-typescript"],
 			},
 			filter: /\.[jt]sx?$/u,
