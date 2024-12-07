@@ -303,6 +303,9 @@ importers:
       eslint-plugin-n:
         specifier: ^17.12.0
         version: 17.12.0(eslint@9.13.0(jiti@2.0.0))
+      eslint-plugin-no-secrets:
+        specifier: ^2.1.1
+        version: 2.1.1(eslint@9.13.0(jiti@2.0.0))
       eslint-plugin-perfectionist:
         specifier: ^3.9.1
         version: 3.9.1(eslint@9.13.0(jiti@2.0.0))(typescript@5.6.3)
@@ -2934,6 +2937,12 @@ packages:
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.23.0'
+
+  eslint-plugin-no-secrets@2.1.1:
+    resolution: {integrity: sha512-jcxk11tA3riniLoI5UqUtrW6/nmC60pNAG1NFpXrenzAu0Hmbjxq63e27YhvNIq+exT2yMZLvCqAQ+lC/+ZWZA==}
+    engines: {node: '>=18', npm: '>=8'}
+    peerDependencies:
+      eslint: '>=5'
 
   eslint-plugin-perfectionist@3.9.1:
     resolution: {integrity: sha512-9WRzf6XaAxF4Oi5t/3TqKP5zUjERhasHmLFHin2Yw6ZAp/EP/EVA2dr3BhQrrHWCm5SzTMZf0FcjDnBkO2xFkA==}
@@ -8976,6 +8985,10 @@ snapshots:
       ignore: 5.3.2
       minimatch: 9.0.5
       semver: 7.6.3
+
+  eslint-plugin-no-secrets@2.1.1(eslint@9.13.0(jiti@2.0.0)):
+    dependencies:
+      eslint: 9.13.0(jiti@2.0.0)
 
   eslint-plugin-perfectionist@3.9.1(eslint@9.13.0(jiti@2.0.0))(typescript@5.6.3):
     dependencies:

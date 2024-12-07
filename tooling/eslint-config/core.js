@@ -13,6 +13,7 @@ import regexpPlugin from "eslint-plugin-regexp";
 import { FlatCompat } from "@eslint/eslintrc";
 import promise from "eslint-plugin-promise";
 import workspaces from "eslint-plugin-workspaces";
+import noSecrets from "eslint-plugin-no-secrets";
 
 const compat = new FlatCompat({
 	baseDirectory: import.meta.dirname,
@@ -412,6 +413,15 @@ export default tseslint.config(
 		},
 		rules: {
 			"workspaces/no-relative-imports": "error",
+		},
+	},
+	{
+		name: "no-secrets",
+		plugins: {
+			"no-secrets": noSecrets,
+		},
+		rules: {
+			"no-secrets/no-secrets": "error",
 		},
 	},
 );
