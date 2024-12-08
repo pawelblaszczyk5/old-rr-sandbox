@@ -133,5 +133,5 @@ jobs:
       - name: Run default
         run: pnpm turbo run knip:default
 
-      - name: Run production
-        run: pnpm turbo run knip:production
+      - name: Run strict
+        run: pnpm turbo run knip:strict

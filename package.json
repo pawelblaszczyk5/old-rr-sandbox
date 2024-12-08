@@ -9,7 +9,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "turbo run build",
-		"ci": "turbo run build lint typecheck sort-package-json spellcheck format commonality:check commonality:constrain knip:default knip:production --continue",
+		"ci": "turbo run build lint typecheck sort-package-json spellcheck format commonality:check commonality:constrain knip:default knip:strict --continue",
 		"ci:fix": "turbo run lint:fix sort-package-json:fix format:fix --continue",
 		"commonality:check": "commonality check",
 		"commonality:constrain": "commonality constrain",
@@ -19,7 +19,7 @@
 		"format": "prettier \".\" --check",
 		"format:fix": "prettier \".\" --write",
 		"knip:default": "knip",
-		"knip:production": "knip --strict",
+		"knip:strict": "knip --strict",
 		"lint": "turbo run lint",
 		"lint:fix": "turbo run lint:fix",
 		"sort-package-json": "sort-package-json \"package.json\" \"{packages,tooling,apps}/*/package.json\" --check",

@@ -53,7 +53,7 @@
 		"//#knip:default": {
 			"dependsOn": []
 		},
-		"//#knip:production": {
+		"//#knip:strict": {
 			"dependsOn": []
 		}
 	}
