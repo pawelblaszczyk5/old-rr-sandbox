@@ -342,6 +342,7 @@ export default tseslint.config(
 				},
 			],
 			"unicorn/require-post-message-target-origin": "error",
+			"unicorn/no-unused-properties": "error",
 			"unicorn/throw-new-error": "off",
 			"unicorn/no-array-callback-reference": "off",
 			"unicorn/no-array-method-this-argument": "off",
