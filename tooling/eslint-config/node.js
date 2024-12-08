@@ -5,6 +5,7 @@ import tseslint from "typescript-eslint";
 export default tseslint.config(n.configs["flat/recommended"], {
 	name: "n overrides",
 	rules: {
+		"n/no-missing-import": "off",
 		"n/no-path-concat": "error",
 		"n/no-process-env": "error",
 		"n/no-unsupported-features/es-builtins": [

@@ -3,5 +3,5 @@
 	"compilerOptions": {
 		"module": "Preserve"
 	},
-	"include": ["vite.config.ts"]
+	"include": ["vite.config.ts", "react-router.config.ts"]
 }

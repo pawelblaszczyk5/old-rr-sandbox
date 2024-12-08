@@ -11,22 +11,23 @@
 	"sideEffects": false,
 	"type": "module",
 	"scripts": {
-		"build": "remix vite:build",
-		"dev": "pnpm run generate-stylesheet --watch & remix vite:dev",
+		"build": "react-router build",
+		"dev": "pnpm run generate-stylesheet --watch & react-router dev",
 		"generate-stylesheet": "tokenami --output ./app/styles.css",
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",
-		"preview": "remix-serve ./build/server/index.js",
-		"typecheck": "tokenami-typecheck"
+		"prepare": "react-router typegen",
+		"preview": "react-router-serve ./build/server/index.js",
+		"typecheck": "react-router typegen && tokenami-typecheck"
 	},
 	"dependencies": {
 		"@moneytor/css": "workspace:0.0.1",
 		"@moneytor/design-system": "workspace:0.0.1",
-		"@remix-run/node": "catalog:",
-		"@remix-run/react": "catalog:",
+		"@react-router/node": "catalog:",
 		"isbot": "^5.1.17",
 		"react": "catalog:",
-		"react-dom": "catalog:"
+		"react-dom": "catalog:",
+		"react-router": "catalog:"
 	},
 	"devDependencies": {
 		"@babel/plugin-syntax-jsx": "^7.25.9",
@@ -34,8 +35,9 @@
 		"@moneytor/eslint-config": "workspace:0.0.1",
 		"@moneytor/tokenami-typecheck": "workspace:0.0.1",
 		"@moneytor/typescript-config": "workspace:0.0.1",
-		"@remix-run/dev": "catalog:",
-		"@remix-run/serve": "catalog:",
+		"@react-router/dev": "catalog:",
+		"@react-router/fs-routes": "catalog:",
+		"@react-router/serve": "catalog:",
 		"@tokenami/dev": "catalog:",
 		"@tokenami/ts-plugin": "catalog:",
 		"@types/node": "catalog:",

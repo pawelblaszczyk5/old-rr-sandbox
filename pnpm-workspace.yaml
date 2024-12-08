@@ -4,10 +4,10 @@ packages:
   - tooling/*
 
 catalog:
-  "@remix-run/dev": ^2.15.0
-  "@remix-run/node": ^2.15.0
-  "@remix-run/react": ^2.15.0
-  "@remix-run/serve": ^2.15.0
+  "@react-router/dev": ^7.0.2
+  "@react-router/fs-routes": ^7.0.2
+  "@react-router/node": ^7.0.2
+  "@react-router/serve": ^7.0.2
   "@tokenami/css": ^0.0.74
   "@tokenami/dev": ^0.0.74
   "@tokenami/ds": ^0.0.74
@@ -19,6 +19,7 @@ catalog:
   commonality-checks-recommended: ^0.0.40
   react: ^19.0.0
   react-dom: ^19.0.0
+  "react-router": ^7.0.2
   "@types/react": ^19.0.1
   "@types/react-dom": ^19.0.1
   typescript: ^5.7.2

@@ -1,6 +1,6 @@
-import type { LinksFunction } from "@remix-run/node";
+import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
 
-import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
+import type { Route } from "./+types/root.js";
 
 import tokenamiStylesheet from "./styles.css?url";
 
@@ -11,9 +11,9 @@ export const links = (() => {
 			rel: "stylesheet",
 		},
 	];
-}) satisfies LinksFunction;
+}) satisfies Route.LinksFunction;
 
-export const Layout = ({ children }: { readonly children: React.ReactNode }) => {
+export const Layout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
 	return (
 		<html lang="en">
 			<head>
