@@ -1,6 +1,6 @@
 import type { Check } from "commonality";
 
-import { diff, json } from "commonality";
+import { json } from "commonality";
 
 export const hasScript = (name: string) => {
 	return {
@@ -10,23 +10,12 @@ export const hasScript = (name: string) => {
 			const packageJson = await json(ctx.package.path, "package.json").get();
 
 			if (!packageJson) {
-				return {
-					message: "package.json does not exist",
-					path: "package.json",
-				};
+				return false;
 			}
 
 			const scripts = packageJson["scripts"] as Record<string, string>;
 
-			if (!scripts[name]) {
-				return {
-					message: `package.json doesn't have a "${name}" script`,
-					path: "package.json",
-					suggestion: diff({ scripts }, { scripts: { ...scripts, [name]: `Your "${name}" command` } }) ?? "",
-				};
-			}
-
-			return true;
+			return name in scripts;
 		},
 	} satisfies Check;
 };

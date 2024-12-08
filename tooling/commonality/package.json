@@ -12,7 +12,8 @@
 	"exports": {
 		"./has-description-field": "./build/src/has-description-field.js",
 		"./use-catalog-protocol": "./build/src/use-catalog-protocol.js",
-		"./use-exact-workspace-version": "./build/src/use-exact-workspace-version.js"
+		"./use-exact-workspace-version": "./build/src/use-exact-workspace-version.js",
+		"./has-proper-readme-heading": "./build/src/has-proper-readme-heading.js"
 	},
 	"scripts": {
 		"build": "tsc --noCheck",

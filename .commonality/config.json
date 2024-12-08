@@ -9,6 +9,7 @@
 			"recommended/matching-dev-peer-versions",
 			"recommended/extends-repository-field",
 			"@moneytor/commonality/has-description-field",
+			"@moneytor/commonality/has-proper-readme-heading",
 			"@moneytor/commonality/use-catalog-protocol",
 			"@moneytor/commonality/use-exact-workspace-version"
 		]

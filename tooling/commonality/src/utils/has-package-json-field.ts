@@ -1,6 +1,6 @@
 import type { Check, PackageJson } from "commonality";
 
-import { diff, json } from "commonality";
+import { json } from "commonality";
 
 export const hasPackageJsonField = (name: string) => {
 	return {
@@ -10,23 +10,12 @@ export const hasPackageJsonField = (name: string) => {
 			const packageJson = await json<PackageJson>(ctx.package.path, "package.json").get();
 
 			if (!packageJson) {
-				return {
-					message: "package.json does not exist",
-					path: "package.json",
-				};
+				return false;
 			}
 
 			const fieldValue = packageJson[name];
 
-			if (typeof fieldValue !== "string" || fieldValue.length === 0) {
-				return {
-					message: `package.json doesn't have a "${name}" field`,
-					path: "package.json",
-					suggestion: diff({ [name]: packageJson[name] }, { [name]: `Your "${name}" field value` }) ?? "",
-				};
-			}
-
-			return true;
+			return typeof fieldValue === "string" && fieldValue.length > 0;
 		},
 	} satisfies Check;
 };

@@ -9,10 +9,7 @@ export default {
 		const currentWorkspace = await json<PackageJson>(ctx.package.path, "package.json").get();
 
 		if (!currentWorkspace) {
-			return {
-				message: "package.json does not exist",
-				path: "package.json",
-			};
+			return false;
 		}
 
 		const workspaceDependenciesWithoutExactVersion = Object.entries({
