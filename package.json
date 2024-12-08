@@ -14,7 +14,7 @@
 		"commonality:check": "commonality check",
 		"commonality:constrain": "commonality constrain",
 		"commonality:studio": "commonality studio",
-		"predev": "turbo run build --filter=\"./{packages,tooling/*\"}",
+		"predev": "turbo run build --filter=\"./{packages,tooling}/*\"",
 		"dev": "turbo watch dev",
 		"format": "prettier \".\" --check",
 		"format:fix": "prettier \".\" --write",
