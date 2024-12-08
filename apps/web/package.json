@@ -27,7 +27,6 @@
 		"@remix-run/node": "catalog:",
 		"@remix-run/react": "catalog:",
 		"@remix-run/serve": "catalog:",
-		"@tokenami/css": "catalog:",
 		"isbot": "^5.1.17",
 		"react": "catalog:",
 		"react-dom": "catalog:"

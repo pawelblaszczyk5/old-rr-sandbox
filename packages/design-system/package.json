@@ -23,7 +23,6 @@
 	},
 	"dependencies": {
 		"@moneytor/css": "workspace:0.0.1",
-		"@tokenami/css": "catalog:",
 		"react": "catalog:",
 		"react-dom": "catalog:"
 	},

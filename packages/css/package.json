@@ -23,6 +23,7 @@
 	},
 	"dependencies": {
 		"@tokenami/css": "catalog:",
+		"@tokenami/dev": "catalog:",
 		"@tokenami/ds": "catalog:"
 	},
 	"devDependencies": {
