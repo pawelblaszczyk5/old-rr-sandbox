@@ -62,9 +62,6 @@
 			"@types/react-dom": "catalog:",
 			"react": "catalog:",
 			"react-dom": "catalog:"
-		},
-		"patchedDependencies": {
-			"@commonalityco/studio": "patches/@commonalityco__studio.patch"
 		}
 	}
 }
