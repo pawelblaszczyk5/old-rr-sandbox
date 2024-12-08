@@ -104,7 +104,6 @@ export default tseslint.config(
 				},
 				...banExtension("ts"),
 				...banExtension("tsx"),
-				...banExtension("jsx"),
 			],
 			"no-return-assign": "error",
 			"no-self-compare": "error",
@@ -338,17 +337,6 @@ export default tseslint.config(
 			"unicorn/prevent-abbreviations": [
 				"error",
 				{
-					allowList: {
-						Args: true,
-						args: true,
-						ctx: true,
-						env: true,
-						props: true,
-						dir: true,
-						rel: true,
-						Params: true,
-						params: true,
-					},
 					checkProperties: true,
 					checkShorthandProperties: true,
 				},

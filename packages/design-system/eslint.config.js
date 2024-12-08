@@ -24,4 +24,18 @@ export default [
 			"@typescript-eslint/no-empty-object-type": "off",
 		},
 	},
+	{
+		rules: {
+			"unicorn/prevent-abbreviations": [
+				"error",
+				{
+					allowList: {
+						env: true,
+					},
+					checkProperties: true,
+					checkShorthandProperties: true,
+				},
+			],
+		},
+	},
 ];

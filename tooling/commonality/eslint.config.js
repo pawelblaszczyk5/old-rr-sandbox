@@ -18,4 +18,18 @@ export default [
 			"import-x/no-default-export": "off",
 		},
 	},
+	{
+		rules: {
+			"unicorn/prevent-abbreviations": [
+				"error",
+				{
+					allowList: {
+						ctx: true,
+					},
+					checkProperties: true,
+					checkShorthandProperties: true,
+				},
+			],
+		},
+	},
 ];

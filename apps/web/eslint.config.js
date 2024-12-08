@@ -39,4 +39,19 @@ export default [
 			],
 		},
 	},
+	{
+		rules: {
+			"unicorn/prevent-abbreviations": [
+				"error",
+				{
+					allowList: {
+						env: true,
+						rel: true,
+					},
+					checkProperties: true,
+					checkShorthandProperties: true,
+				},
+			],
+		},
+	},
 ];
