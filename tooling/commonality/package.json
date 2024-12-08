@@ -22,8 +22,7 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
-		"commonality": "catalog:",
-		"commonality-checks-recommended": "catalog:"
+		"commonality": "catalog:"
 	},
 	"devDependencies": {
 		"@moneytor/eslint-config": "workspace:0.0.1",

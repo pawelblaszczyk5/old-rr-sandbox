@@ -1,0 +1,59 @@
+{
+	"$schema": "https://unpkg.com/knip@5/schema.json",
+	"workspaces": {
+		".": {
+			"ignoreDependencies": ["@moneytor/commonality", "commonality-checks-recommended"]
+		},
+		"apps/web": {
+			"entry": [
+				"app/routes/*/route.tsx!",
+				"app/entry.client.tsx!",
+				"app/entry.server.tsx!",
+				"app/declarations/**.ts!",
+				"app/root.tsx!",
+				"eslint.config.js",
+				"vite.config.ts",
+				".tokenami/tokenami.config.ts"
+			],
+			"project": ["app/**/*.{ts,tsx}!"],
+			"ignoreDependencies": ["@babel/plugin-syntax-jsx", "@babel/preset-typescript", "babel-plugin-react-compiler"],
+			"ignore": [".tokenami/tokenami.env.d.ts"]
+		},
+		"packages/css": {
+			"entry": ["src/config.ts!", "src/index.ts!", "eslint.config.js"],
+			"project": ["src/**/*.ts"]
+		},
+		"packages/design-system": {
+			"entry": ["src/button.tsx!", "eslint.config.js", ".tokenami/tokenami.config.ts"],
+			"project": ["src/**/*.{ts,tsx}"],
+			"ignore": [".tokenami/tokenami.env.d.ts"]
+		},
+		"packages/invariant": {
+			"entry": ["src/index.ts!", "eslint.config.js"],
+			"project": ["src/**/*.ts"]
+		},
+		"tooling/commonality": {
+			"entry": ["src/*.ts!", "eslint.config.js"],
+			"project": ["src/**/*.ts"]
+		},
+		"tooling/docs": {
+			"entry": ["eslint.config.js"],
+			"project": []
+		},
+		"tooling/eslint-config": {
+			"entry": ["*.js!"],
+			"project": [],
+			"ignoreDependencies": ["eslint-import-resolver-typescript", "eslint-plugin-react-hooks"]
+		},
+		"tooling/tokenami-typecheck": {
+			"entry": ["bin.js!", "src/index.ts!", "eslint.config.js"],
+			"project": ["src/**/*.ts"]
+		},
+		"tooling/typescript-config": {
+			"entry": [],
+			"project": []
+		}
+	},
+	"ignoreBinaries": ["eslint"],
+	"remix": false
+}

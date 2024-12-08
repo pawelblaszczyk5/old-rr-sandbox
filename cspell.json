@@ -6,7 +6,6 @@
 	"useGitignore": true,
 	"words": [
 		"codeowner",
-		"commonality",
 		"moneytor",
 		"multitenancy",
 		"pawelblaszczyk",
@@ -17,5 +16,17 @@
 	],
 	"enableGlobDot": true,
 	"enableFiletypes": ["dockerfile", "github-actions-workflow"],
-	"ignoreWords": ["commonalityco", "isbot", "nuqs", "pipeable", "predev", "replicache", "taze", "tseslint", "xyflow"]
+	"ignoreWords": [
+		"commonality",
+		"commonalityco",
+		"isbot",
+		"knip",
+		"nuqs",
+		"pipeable",
+		"predev",
+		"replicache",
+		"taze",
+		"tseslint",
+		"xyflow"
+	]
 }

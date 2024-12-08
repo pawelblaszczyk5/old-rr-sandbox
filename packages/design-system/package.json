@@ -23,8 +23,7 @@
 	},
 	"dependencies": {
 		"@moneytor/css": "workspace:0.0.1",
-		"react": "catalog:",
-		"react-dom": "catalog:"
+		"react": "catalog:"
 	},
 	"devDependencies": {
 		"@moneytor/eslint-config": "workspace:0.0.1",
@@ -33,7 +32,6 @@
 		"@tokenami/dev": "catalog:",
 		"@tokenami/ts-plugin": "catalog:",
 		"@types/react": "catalog:",
-		"@types/react-dom": "catalog:",
 		"typescript": "catalog:"
 	}
 }

@@ -49,6 +49,12 @@
 		},
 		"//#commonality:constrain": {
 			"dependsOn": []
+		},
+		"//#knip:default": {
+			"dependsOn": []
+		},
+		"//#knip:production": {
+			"dependsOn": []
 		}
 	}
 }
