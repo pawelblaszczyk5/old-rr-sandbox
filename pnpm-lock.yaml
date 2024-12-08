@@ -127,6 +127,9 @@ importers:
       '@moneytor/eslint-config':
         specifier: workspace:0.0.1
         version: link:../../tooling/eslint-config
+      '@moneytor/tokenami-typecheck':
+        specifier: workspace:0.0.1
+        version: link:../../tooling/tokenami-typecheck
       '@moneytor/typescript-config':
         specifier: workspace:0.0.1
         version: link:../../tooling/typescript-config
@@ -195,6 +198,9 @@ importers:
       '@moneytor/eslint-config':
         specifier: workspace:0.0.1
         version: link:../../tooling/eslint-config
+      '@moneytor/tokenami-typecheck':
+        specifier: workspace:0.0.1
+        version: link:../../tooling/tokenami-typecheck
       '@moneytor/typescript-config':
         specifier: workspace:0.0.1
         version: link:../../tooling/typescript-config
@@ -346,6 +352,25 @@ importers:
       typescript-eslint:
         specifier: 8.12.2
         version: 8.12.2(eslint@9.13.0(jiti@2.0.0))(typescript@5.6.3)
+
+  tooling/tokenami-typecheck:
+    dependencies:
+      zx:
+        specifier: ^8.2.4
+        version: 8.2.4
+    devDependencies:
+      '@moneytor/eslint-config':
+        specifier: workspace:0.0.1
+        version: link:../eslint-config
+      '@moneytor/typescript-config':
+        specifier: workspace:0.0.1
+        version: link:../typescript-config
+      '@types/node':
+        specifier: 'catalog:'
+        version: 22.8.6
+      typescript:
+        specifier: 'catalog:'
+        version: 5.6.3
 
   tooling/typescript-config: {}
 
@@ -1734,6 +1759,9 @@ packages:
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
 
+  '@types/fs-extra@11.0.4':
+    resolution: {integrity: sha512-yTbItCNreRooED33qjunPthRcSjERP1r4MqCZc7wv0u2sUkzTFp45tgUfS5+r7FrZPdmCCNflLhVSP/o+SemsQ==}
+
   '@types/hast@2.3.10':
     resolution: {integrity: sha512-McWspRw8xx8J9HurkVBfYj0xKoE25tOFlHGdx4MJ5xORQrMGZNqJhVQWaIbm6Oyla5kYOXtDiopzKRJzEOkwJw==}
 
@@ -1751,6 +1779,9 @@ packages:
 
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+
+  '@types/jsonfile@6.1.4':
+    resolution: {integrity: sha512-D5qGUYwjvnNNextdU59/+fI+spnwtTFmyQP0h+PfIOSkNfpU6AOICUOkm4i0OnSk+NyjdPJrxCDro0sJsWlRpQ==}
 
   '@types/mdast@3.0.15':
     resolution: {integrity: sha512-LnwD+mUEfxWMa1QpDraczIn6k0Ee3SMicuYSSzS6ZYl2gKS09EClnJYGd8Du6rfc5r/GZEk5o1mRb8TaTj03sQ==}
@@ -5999,6 +6030,11 @@ packages:
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
+  zx@8.2.4:
+    resolution: {integrity: sha512-g9wVU+5+M+zVen/3IyAZfsZFmeqb6vDfjqFggakviz5uLK7OAejOirX+jeTOkyvAh/OYRlCgw+SdqzN7F61QVQ==}
+    engines: {node: '>= 12.17.0'}
+    hasBin: true
+
 snapshots:
 
   '@ampproject/remapping@2.3.0':
@@ -7423,6 +7459,12 @@ snapshots:
 
   '@types/estree@1.0.6': {}
 
+  '@types/fs-extra@11.0.4':
+    dependencies:
+      '@types/jsonfile': 6.1.4
+      '@types/node': 22.8.6
+    optional: true
+
   '@types/hast@2.3.10':
     dependencies:
       '@types/unist': 2.0.11
@@ -7441,6 +7483,11 @@ snapshots:
   '@types/json-schema@7.0.15': {}
 
   '@types/json5@0.0.29': {}
+
+  '@types/jsonfile@6.1.4':
+    dependencies:
+      '@types/node': 22.8.6
+    optional: true
 
   '@types/mdast@3.0.15':
     dependencies:
@@ -12572,3 +12619,8 @@ snapshots:
   zod@3.23.8: {}
 
   zwitch@2.0.4: {}
+
+  zx@8.2.4:
+    optionalDependencies:
+      '@types/fs-extra': 11.0.4
+      '@types/node': 22.8.6

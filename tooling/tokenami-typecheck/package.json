@@ -1,0 +1,30 @@
+{
+	"name": "@moneytor/tokenami-typecheck",
+	"version": "0.0.1",
+	"private": true,
+	"description": "Utility for typechecking Tokenami",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pawelblaszczyk5/moneytor",
+		"directory": "tooling/tokenami-typecheck"
+	},
+	"sideEffects": false,
+	"type": "module",
+	"bin": "./bin.js",
+	"scripts": {
+		"build": "tsc --noCheck",
+		"dev": "tsc --noCheck",
+		"lint": "eslint",
+		"lint:fix": "eslint --fix",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"zx": "^8.2.4"
+	},
+	"devDependencies": {
+		"@moneytor/eslint-config": "workspace:0.0.1",
+		"@moneytor/typescript-config": "workspace:0.0.1",
+		"@types/node": "catalog:",
+		"typescript": "catalog:"
+	}
+}

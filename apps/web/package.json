@@ -17,7 +17,7 @@
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",
 		"preview": "remix-serve ./build/server/index.js",
-		"typecheck": "sed -i '' 's/CI: false/CI: true/' .tokenami/tokenami.env.d.ts; exit_code=0; tsc --build || exit_code=$?; sed -i '' 's/CI: true/CI: false/' .tokenami/tokenami.env.d.ts; exit $exit_code"
+		"typecheck": "tokenami-typecheck"
 	},
 	"dependencies": {
 		"@babel/plugin-syntax-jsx": "^7.25.9",
@@ -35,6 +35,7 @@
 	"devDependencies": {
 		"@babel/preset-typescript": "^7.26.0",
 		"@moneytor/eslint-config": "workspace:0.0.1",
+		"@moneytor/tokenami-typecheck": "workspace:0.0.1",
 		"@moneytor/typescript-config": "workspace:0.0.1",
 		"@remix-run/dev": "catalog:",
 		"@tokenami/dev": "catalog:",
