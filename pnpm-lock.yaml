@@ -106,9 +106,6 @@ importers:
       '@moneytor/design-system':
         specifier: workspace:0.0.1
         version: link:../../packages/design-system
-      '@moneytor/invariant':
-        specifier: workspace:0.0.1
-        version: link:../../packages/invariant
       '@remix-run/node':
         specifier: 'catalog:'
         version: 2.15.0(typescript@5.7.2)
