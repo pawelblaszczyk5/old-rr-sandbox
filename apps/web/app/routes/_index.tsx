@@ -12,7 +12,7 @@ const Route = () => {
 
 	return (
 		<>
-			<h1 style={css({ "--color": "var(--color_test)", "--hover_color": "var(---, red)" })}>
+			<h1 style={css({ "--color": "var(--color_blue12)", "--hover_color": "var(---, red)" })}>
 				Hello world {x.toISOString()}
 			</h1>
 			<Button />

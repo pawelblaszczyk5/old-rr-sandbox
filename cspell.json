@@ -17,5 +17,15 @@
 	],
 	"enableGlobDot": true,
 	"enableFiletypes": ["dockerfile", "github-actions-workflow"],
-	"ignoreWords": ["commonalityco", "isbot", "jsxdev", "nuqs", "pipeable", "replicache", "taze", "tseslint", "xyflow"]
+	"ignoreWords": [
+		"commonalityco",
+		"isbot",
+		"nuqs",
+		"pipeable",
+		"predev",
+		"replicache",
+		"taze",
+		"tseslint",
+		"xyflow"
+	]
 }

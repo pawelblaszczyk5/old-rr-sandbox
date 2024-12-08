@@ -4,18 +4,21 @@ packages:
   - tooling/*
 
 catalog:
-  "@remix-run/dev": ^2.13.1
-  "@remix-run/node": ^2.13.1
-  "@remix-run/react": ^2.13.1
-  "@remix-run/serve": ^2.13.1
-  "@tokenami/css": ^0.0.69
-  "@tokenami/dev": ^0.0.69
-  "@tokenami/ts-plugin": ^0.0.69
-  "@types/node": ^22.8.6
+  "@remix-run/dev": ^2.15.0
+  "@remix-run/node": ^2.15.0
+  "@remix-run/react": ^2.15.0
+  "@remix-run/serve": ^2.15.0
+  "@tokenami/css": ^0.0.74
+  "@tokenami/dev": ^0.0.74
+  "@tokenami/ds": ^0.0.74
+  "@tokenami/ts-plugin": ^0.0.74
+  "@types/node": ^22.10.1
+  babel-plugin-react-compiler: 0.0.0-experimental-50915ff-20241206
+  eslint-plugin-react-compiler: 0.0.0-experimental-50915ff-20241206
   commonality: ^0.2.63
   commonality-checks-recommended: ^0.0.40
-  react: 19.0.0-rc-28668d39-20241023
-  react-dom: 19.0.0-rc-28668d39-20241023
-  "@types/react": npm:types-react@19.0.0-rc.1
-  "@types/react-dom": npm:types-react-dom@19.0.0-rc.1
-  typescript: ^5.6.3
+  react: ^19.0.0
+  react-dom: ^19.0.0
+  "@types/react": ^19.0.1
+  "@types/react-dom": ^19.0.1
+  typescript: ^5.7.2

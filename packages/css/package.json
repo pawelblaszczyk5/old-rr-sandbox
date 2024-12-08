@@ -22,7 +22,8 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@tokenami/css": "catalog:"
+		"@tokenami/css": "catalog:",
+		"@tokenami/ds": "catalog:"
 	},
 	"devDependencies": {
 		"@moneytor/eslint-config": "workspace:0.0.1",

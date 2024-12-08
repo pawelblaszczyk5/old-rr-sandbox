@@ -11,6 +11,9 @@ export default [
 			},
 		},
 	},
+	{
+		ignores: [".tokenami/tokenami.env.d.ts"],
+	},
 	...core,
 	...react,
 	...node,

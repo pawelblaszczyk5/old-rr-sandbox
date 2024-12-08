@@ -353,6 +353,7 @@ export default tseslint.config(
 	{
 		name: "perfectionist overrides",
 		rules: {
+			"perfectionist/sort-modules": "off",
 			"perfectionist/sort-imports": [
 				"error",
 				{
@@ -370,15 +371,15 @@ export default tseslint.config(
 						"object",
 						"unknown",
 					],
-					internalPattern: ["\\#**/**"],
+					internalPattern: ["#.*"],
 					order: "asc",
 					type: "natural",
 					customGroups: {
 						value: {
-							monorepo: ["@moneytor/**"],
+							monorepo: ["@moneytor/.*"],
 						},
 						type: {
-							"monorepo-type": ["@moneytor/**"],
+							"monorepo-type": ["@moneytor/.*"],
 						},
 					},
 				},
