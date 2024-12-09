@@ -16,7 +16,6 @@
 		"generate-stylesheet": "tokenami --output ./app/styles.css",
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",
-		"prepare": "react-router typegen",
 		"preview": "react-router-serve ./build/server/index.js",
 		"typecheck": "react-router typegen && tokenami-typecheck"
 	},
