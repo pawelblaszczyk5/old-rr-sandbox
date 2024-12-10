@@ -33,7 +33,7 @@
 		"commonality": "catalog:",
 		"commonality-checks-recommended": "catalog:",
 		"cspell": "^8.16.1",
-		"knip": "^5.39.2",
+		"knip": "^5.39.4",
 		"prettier": "^3.4.2",
 		"sort-package-json": "^2.12.0",
 		"taze": "^0.18.0",
