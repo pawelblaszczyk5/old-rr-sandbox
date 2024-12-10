@@ -1,17 +1,6 @@
-import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
-
-import type { Route } from "./+types/root.js";
+import { Outlet, Scripts, ScrollRestoration } from "react-router";
 
 import tokenamiStylesheet from "./styles.css?url";
-
-export const links = (() => {
-	return [
-		{
-			href: tokenamiStylesheet,
-			rel: "stylesheet",
-		},
-	];
-}) satisfies Route.LinksFunction;
 
 export const Layout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
 	return (
@@ -19,8 +8,7 @@ export const Layout = ({ children }: Readonly<{ children: React.ReactNode }>) =>
 			<head>
 				<meta charSet="utf-8" />
 				<meta content="width=device-width, initial-scale=1" name="viewport" />
-				<Meta />
-				<Links />
+				<link href={tokenamiStylesheet} rel="stylesheet" />
 			</head>
 			<body>
 				{children}
