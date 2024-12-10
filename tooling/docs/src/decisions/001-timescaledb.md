@@ -20,6 +20,6 @@ Use `Postgres` with `TimescaleDB` as a database. While I'll need to learn more, 
 
 ## Consequences
 
-I'll need to learn a lot 😄 Local setup for testing, backups, `TimescaleDB` itself, much more complicated capabilities and data types than basic `SQLite` ones. Moreover if I use AI in the future there's a change I'll need to use some vectors. That's also possible within `Postgres` itself. Similiarly with geospatial data for where some transaction occurred.
+I'll need to learn a lot 😄 Local setup for testing, backups, `TimescaleDB` itself, much more complicated capabilities and data types than basic `SQLite` ones. Moreover if I use AI in the future there's a change I'll need to use some vectors. That's also possible within `Postgres` itself. Similarly with geospatial data for where some transaction occurred.
 
 One sad thing - I bought High Performance SQLite already xD
