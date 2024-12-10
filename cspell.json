@@ -6,6 +6,7 @@
 	"useGitignore": true,
 	"words": [
 		"codeowner",
+		"geospatial",
 		"moneytor",
 		"multitenancy",
 		"pawelblaszczyk",
@@ -24,7 +25,6 @@
 		"nuqs",
 		"pipeable",
 		"predev",
-		"replicache",
 		"taze",
 		"tseslint",
 		"xyflow"
