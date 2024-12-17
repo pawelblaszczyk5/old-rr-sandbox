@@ -23,7 +23,7 @@
 		"@moneytor/css": "workspace:0.0.1",
 		"@moneytor/design-system": "workspace:0.0.1",
 		"@react-router/node": "catalog:",
-		"isbot": "^5.1.17",
+		"isbot": "^5.1.18",
 		"react": "catalog:",
 		"react-dom": "catalog:",
 		"react-router": "catalog:"
