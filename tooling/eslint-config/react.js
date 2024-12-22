@@ -76,7 +76,7 @@ export default tseslint.config(
 			"react-dom": reactDom,
 		},
 		rules: {
-			"react-dom/no-children-in-void-dom-elements": "error",
+			"react-dom/no-void-elements-with-children": "error",
 			"react-dom/no-dangerously-set-innerhtml": "error",
 			"react-dom/no-dangerously-set-innerhtml-with-children": "error",
 			"react-dom/no-find-dom-node": "error",
@@ -113,6 +113,7 @@ export default tseslint.config(
 			"react-hooks-extra/no-unnecessary-use-callback": "error",
 			"react-hooks-extra/no-unnecessary-use-memo": "error",
 			"react-hooks-extra/prefer-use-state-lazy-initialization": "error",
+			"react-hooks-extra/no-useless-custom-hooks": "error",
 		},
 	},
 	{
