@@ -19,7 +19,7 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
-		"zx": "^8.2.4"
+		"zx": "^8.3.0"
 	},
 	"devDependencies": {
 		"@moneytor/eslint-config": "workspace:0.0.1",

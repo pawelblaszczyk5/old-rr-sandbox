@@ -2,23 +2,24 @@ packages:
   - apps/*
   - packages/*
   - tooling/*
+
 catalog:
-  '@react-router/dev': ^7.1.0
-  '@react-router/fs-routes': ^7.1.0
-  '@react-router/node': ^7.1.0
-  '@react-router/serve': ^7.1.0
-  '@tokenami/css': ^0.0.75
-  '@tokenami/dev': ^0.0.75
-  '@tokenami/ds': ^0.0.75
-  '@tokenami/ts-plugin': ^0.0.75
-  '@types/node': ^22.10.2
-  '@types/react': ^19.0.2
-  '@types/react-dom': ^19.0.2
-  babel-plugin-react-compiler: 0.0.0-experimental-ba7b8e5-20241213
+  "@react-router/dev": ^7.1.1
+  "@react-router/fs-routes": ^7.1.1
+  "@react-router/node": ^7.1.1
+  "@react-router/serve": ^7.1.1
+  "@tokenami/css": ^0.0.75
+  "@tokenami/dev": ^0.0.75
+  "@tokenami/ds": ^0.0.75
+  "@tokenami/ts-plugin": ^0.0.75
+  "@types/node": ^22.10.5
+  "@types/react": ^19.0.2
+  "@types/react-dom": ^19.0.2
+  babel-plugin-react-compiler: 0.0.0-experimental-cd3852a-20250102
   commonality: ^0.2.63
   commonality-checks-recommended: ^0.0.40
-  eslint-plugin-react-compiler: 0.0.0-experimental-ba7b8e5-20241213
+  eslint-plugin-react-compiler: 0.0.0-experimental-cd3852a-20250102
   react: ^19.0.0
   react-dom: ^19.0.0
-  react-router: ^7.1.0
+  react-router: ^7.1.1
   typescript: ^5.7.2
