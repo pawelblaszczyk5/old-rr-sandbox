@@ -94,7 +94,7 @@ It seems to be the most powerful platform for me now. They provide a lot of stuf
   - Planned expenses - something for the future that you're planning but didn't bought yet. It could prompt to confirm at desired date or just wait
   - Custom data schema - additional metadata for expenses in customized config. I can imagine someone wanting to categorize expenses by payment method, but I don't want to have this built-in. Maybe if more people use this app I'd like to add more configurable approach
   - Currency - that's the topic that I want to dive deeper in the future somehow but I'm still not sure how
-  - Budget planning - make some plans around how much I intend to spend across categories etc
+  - Budget planning - make some plans around how much I intend to spend across categories etc, maybe this should just be a basic limits mechanism?
 - Incomes and savings
   - New type of the same data as expense
   - Not sure what would be nice to track there
