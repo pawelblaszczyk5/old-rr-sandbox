@@ -13,7 +13,7 @@ catalog:
   "@tokenami/ds": ^0.0.75
   "@tokenami/ts-plugin": ^0.0.75
   "@types/node": ^22.10.5
-  "@types/react": ^19.0.2
+  "@types/react": ^19.0.3
   "@types/react-dom": ^19.0.2
   babel-plugin-react-compiler: 0.0.0-experimental-cd3852a-20250102
   commonality: ^0.2.63
