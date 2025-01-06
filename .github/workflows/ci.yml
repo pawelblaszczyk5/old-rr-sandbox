@@ -118,20 +118,3 @@ jobs:
 
       - name: Run checks
         run: pnpm turbo run commonality:check
-
-  knip:
-    name: ✂️ Knip
-    timeout-minutes: 1
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # pin@v4
-
-      - name: Setup
-        uses: ./.github/composite-actions/setup
-
-      - name: Run default
-        run: pnpm turbo run knip:default
-
-      - name: Run strict
-        run: pnpm turbo run knip:strict
