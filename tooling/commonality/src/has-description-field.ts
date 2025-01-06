@@ -1,4 +1,4 @@
-import { hasPackageJsonField } from "./utils/has-package-json-field.js";
+import { hasPackageJsonField } from "#src/utils/has-package-json-field.js";
 
 const hasDescriptionField = hasPackageJsonField("description");
 

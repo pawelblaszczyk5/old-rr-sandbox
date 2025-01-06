@@ -10,6 +10,9 @@
 	},
 	"sideEffects": false,
 	"type": "module",
+	"imports": {
+		"#src/*": "./build/src/*"
+	},
 	"exports": {
 		".": "./build/src/index.js",
 		"./config": "./build/src/config.js"

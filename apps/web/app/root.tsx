@@ -1,6 +1,6 @@
 import { Outlet, Scripts, ScrollRestoration } from "react-router";
 
-import tokenamiStylesheet from "./styles.css?url";
+import tokenamiStylesheet from "#app/styles.css?url";
 
 export const Layout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
 	return (

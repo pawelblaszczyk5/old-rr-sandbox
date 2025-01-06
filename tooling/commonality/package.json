@@ -9,6 +9,9 @@
 		"directory": "tooling/commonality"
 	},
 	"type": "module",
+	"imports": {
+		"#src/*": "./build/src/*"
+	},
 	"exports": {
 		"./has-description-field": "./build/src/has-description-field.js",
 		"./use-catalog-protocol": "./build/src/use-catalog-protocol.js",

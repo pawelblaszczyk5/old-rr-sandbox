@@ -192,6 +192,17 @@ export default tseslint.config(
 					checksVoidReturn: false,
 				},
 			],
+			"@typescript-eslint/no-restricted-imports": [
+				"error",
+				{
+					patterns: [
+						{
+							regex: "^\\.",
+							message: "Don't use relative imports",
+						},
+					],
+				},
+			],
 			"@typescript-eslint/no-unnecessary-type-parameters": "error",
 			"@typescript-eslint/no-unused-vars": ["error", { ignoreRestSiblings: true }],
 			"@typescript-eslint/no-use-before-define": [

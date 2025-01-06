@@ -10,6 +10,9 @@
 	},
 	"sideEffects": false,
 	"type": "module",
+	"imports": {
+		"#src/*": "./build/src/*"
+	},
 	"exports": {
 		"./button": "./build/src/button.jsx"
 	},

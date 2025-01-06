@@ -10,6 +10,9 @@
 	},
 	"sideEffects": false,
 	"type": "module",
+	"imports": {
+		"#app/*": "./app/*"
+	},
 	"scripts": {
 		"build": "react-router build",
 		"dev": "pnpm run generate-stylesheet --watch & react-router dev",

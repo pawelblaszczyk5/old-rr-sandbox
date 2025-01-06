@@ -30,7 +30,7 @@ export default [
 		},
 	},
 	{
-		files: ["app/routes/**/*.tsx", "app/root.tsx"],
+		files: ["app/routes/**/route.tsx", "app/root.tsx"],
 		rules: {
 			"import-x/no-default-export": "off",
 			"react-refresh/only-export-components": [
@@ -53,6 +53,17 @@ export default [
 					},
 					checkProperties: true,
 					checkShorthandProperties: true,
+				},
+			],
+			"@typescript-eslint/no-restricted-imports": [
+				"error",
+				{
+					patterns: [
+						{
+							regex: "^\\.(?!\\/\\+types)",
+							message: "Don't use relative imports",
+						},
+					],
 				},
 			],
 		},
