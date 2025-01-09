@@ -33,13 +33,13 @@
 		"cspell": "^8.17.1",
 		"prettier": "^3.4.2",
 		"sort-package-json": "^2.12.0",
-		"taze": "^0.18.0",
+		"taze": "^18.1.0",
 		"turbo": "2.3.3",
 		"typescript": "catalog:"
 	},
 	"packageManager": "pnpm@10.0.0",
 	"engines": {
-		"node": "22.12.0",
+		"node": "22.13.0",
 		"pnpm": "10.0.0"
 	},
 	"pnpm": {
