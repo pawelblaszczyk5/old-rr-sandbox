@@ -18,7 +18,13 @@ export default [
 	...react,
 	...node,
 	{
-		files: ["vite.config.ts", "react-router.config.ts", "app/routes.ts", ".tokenami/tokenami.config.ts"],
+		files: [
+			"vite.config.ts",
+			"react-router.config.ts",
+			"app/routes.ts",
+			".tokenami/tokenami.config.ts",
+			"app/entry.server.tsx",
+		],
 		rules: {
 			"import-x/no-default-export": "off",
 		},
