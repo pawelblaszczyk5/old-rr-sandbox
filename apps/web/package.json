@@ -20,7 +20,7 @@
 		"i18n:extract": "lingui extract",
 		"lint": "react-router typegen && eslint",
 		"lint:fix": "eslint --fix",
-		"preview": "react-router-serve ./build/server/index.js",
+		"preview": "node ./build/server/index.js",
 		"typecheck": "react-router typegen && tokenami-typecheck"
 	},
 	"dependencies": {
