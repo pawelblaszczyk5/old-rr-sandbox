@@ -21,7 +21,9 @@ export default [
 		files: [
 			"vite.config.ts",
 			"react-router.config.ts",
+			"lingui.config.ts",
 			"app/routes.ts",
+			"app/server.ts",
 			".tokenami/tokenami.config.ts",
 			"app/entry.server.tsx",
 		],

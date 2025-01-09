@@ -17,23 +17,32 @@
 		"build": "react-router build",
 		"dev": "pnpm run generate-stylesheet --watch & react-router dev",
 		"generate-stylesheet": "tokenami --output ./app/styles.css",
+		"i18n:extract": "lingui extract",
 		"lint": "react-router typegen && eslint",
 		"lint:fix": "eslint --fix",
 		"preview": "react-router-serve ./build/server/index.js",
 		"typecheck": "react-router typegen && tokenami-typecheck"
 	},
 	"dependencies": {
+		"@lingui/core": "^5.1.2",
+		"@lingui/react": "^5.1.2",
 		"@moneytor/css": "workspace:0.0.1",
 		"@moneytor/design-system": "workspace:0.0.1",
 		"@react-router/node": "catalog:",
+		"hono": "^4.6.16",
 		"isbot": "^5.1.21",
 		"react": "catalog:",
 		"react-dom": "catalog:",
-		"react-router": "catalog:"
+		"react-router": "catalog:",
+		"react-router-hono-server": "^2.6.4"
 	},
 	"devDependencies": {
 		"@babel/plugin-syntax-jsx": "^7.25.9",
 		"@babel/preset-typescript": "^7.26.0",
+		"@lingui/babel-plugin-lingui-macro": "^5.1.2",
+		"@lingui/cli": "^5.1.2",
+		"@lingui/conf": "^5.1.2",
+		"@lingui/vite-plugin": "^5.1.2",
 		"@moneytor/eslint-config": "workspace:0.0.1",
 		"@moneytor/tokenami-typecheck": "workspace:0.0.1",
 		"@moneytor/typescript-config": "workspace:0.0.1",

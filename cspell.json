@@ -1,6 +1,7 @@
 {
 	"$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
 	"version": "0.2",
+	"import": ["@cspell/dict-pl_pl/cspell-ext.json"],
 	"ignorePaths": ["pnpm-lock.yaml", "**.svg", ".git/", ".gitignore", ".vscode/", "./patches/"],
 	"dictionaries": ["lorem-ipsum"],
 	"useGitignore": true,
@@ -17,5 +18,17 @@
 	],
 	"enableGlobDot": true,
 	"enableFiletypes": ["dockerfile", "github-actions-workflow"],
-	"ignoreWords": ["commonality", "commonalityco", "isbot", "nuqs", "pipeable", "predev", "taze", "tseslint", "xyflow"]
+	"ignoreWords": [
+		"commonality",
+		"commonalityco",
+		"isbot",
+		"lingui",
+		"nuqs",
+		"pipeable",
+		"predev",
+		"taze",
+		"tseslint",
+		"xyflow"
+	],
+	"overrides": [{ "language": "pl-PL,en-US", "filename": "apps/web/app/locales/pl-PL.po" }]
 }

@@ -27,6 +27,7 @@
 		"update-dependencies": "taze major --write --interactive --recursive --includeLocked --force"
 	},
 	"devDependencies": {
+		"@cspell/dict-pl_pl": "^3.0.4",
 		"@moneytor/commonality": "workspace:0.0.1",
 		"commonality": "catalog:",
 		"commonality-checks-recommended": "catalog:",
