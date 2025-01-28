@@ -1,1 +1,0 @@
-# @moneytor/tokenami-typecheck

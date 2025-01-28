@@ -1,30 +1,34 @@
 {
-	"name": "@moneytor/tokenami-typecheck",
+	"name": "@moneytor/theme",
 	"version": "0.0.1",
 	"private": true,
-	"description": "Utility for typechecking Tokenami",
+	"description": "Stylex variables for theming",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/pawelblaszczyk5/moneytor",
-		"directory": "tooling/tokenami-typecheck"
+		"directory": "packages/theme"
 	},
 	"sideEffects": false,
 	"type": "module",
-	"bin": "./bin.js",
+	"imports": {
+		"#src/*": "./build/src/*"
+	},
+	"exports": {
+		"./colors.stylex": "./build/src/colors.stylex.js"
+	},
 	"scripts": {
 		"build": "tsc --noCheck",
 		"dev": "tsc --noCheck",
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",
-		"typecheck": "tsc --noEmit"
+		"typecheck": "tsc --build --noEmit"
 	},
 	"dependencies": {
-		"zx": "^8.3.0"
+		"@moneytor/stylex": "workspace:0.0.1"
 	},
 	"devDependencies": {
 		"@moneytor/eslint-config": "workspace:0.0.1",
 		"@moneytor/typescript-config": "workspace:0.0.1",
-		"@types/node": "catalog:",
 		"typescript": "catalog:"
 	}
 }

@@ -18,22 +18,20 @@
 	},
 	"scripts": {
 		"build": "tsc --noCheck",
-		"dev": "pnpm run generate-stylesheet && tsc --noCheck",
-		"generate-stylesheet": "tokenami --output ./build/styles.css",
+		"dev": "tsc --noCheck",
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",
-		"typecheck": "tokenami-typecheck"
+		"typecheck": "tsc --build --noEmit"
 	},
 	"dependencies": {
-		"@moneytor/css": "workspace:0.0.1",
-		"react": "catalog:"
+		"@moneytor/stylex": "workspace:0.0.1",
+		"@moneytor/theme": "workspace:0.0.1",
+		"react": "catalog:",
+		"react-dom": "catalog:"
 	},
 	"devDependencies": {
 		"@moneytor/eslint-config": "workspace:0.0.1",
-		"@moneytor/tokenami-typecheck": "workspace:0.0.1",
 		"@moneytor/typescript-config": "workspace:0.0.1",
-		"@tokenami/dev": "catalog:",
-		"@tokenami/ts-plugin": "catalog:",
 		"@types/react": "catalog:",
 		"typescript": "catalog:"
 	}

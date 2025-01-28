@@ -1,12 +1,12 @@
 {
-	"name": "@moneytor/css",
+	"name": "@moneytor/stylex",
 	"version": "0.0.1",
 	"private": true,
-	"description": "Shared code for Tokenami usage",
+	"description": "Re-export of stylex package",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/pawelblaszczyk5/moneytor",
-		"directory": "packages/css"
+		"directory": "packages/stylex"
 	},
 	"sideEffects": false,
 	"type": "module",
@@ -14,20 +14,17 @@
 		"#src/*": "./build/src/*"
 	},
 	"exports": {
-		".": "./build/src/index.js",
-		"./config": "./build/src/config.js"
+		".": "./build/src/entry.js"
 	},
 	"scripts": {
 		"build": "tsc --noCheck",
 		"dev": "tsc --noCheck",
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",
-		"typecheck": "tsc --noEmit"
+		"typecheck": "tsc --build --noEmit"
 	},
 	"dependencies": {
-		"@tokenami/css": "catalog:",
-		"@tokenami/dev": "catalog:",
-		"@tokenami/ds": "catalog:"
+		"@stylexjs/stylex": "catalog:"
 	},
 	"devDependencies": {
 		"@moneytor/eslint-config": "workspace:0.0.1",

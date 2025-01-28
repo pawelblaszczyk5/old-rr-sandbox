@@ -2,9 +2,6 @@
 	"$schema": "https://turbo.build/schema.json",
 	"extends": ["//"],
 	"tasks": {
-		"generate-stylesheet": {
-			"outputs": ["app/styles.css"]
-		},
 		"dev": {
 			"persistent": true
 		},

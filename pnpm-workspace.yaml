@@ -8,10 +8,9 @@ catalog:
   "@react-router/fs-routes": ^7.1.1
   "@react-router/node": ^7.1.1
   "@react-router/serve": ^7.1.1
-  "@tokenami/css": ^0.0.75
-  "@tokenami/dev": ^0.0.75
-  "@tokenami/ds": ^0.0.75
-  "@tokenami/ts-plugin": ^0.0.75
+  "@stylexjs/babel-plugin": ^0.10.1
+  "@stylexjs/postcss-plugin": ^0.10.1
+  "@stylexjs/stylex": ^0.10.1
   "@types/node": ^22.10.5
   "@types/react": ^19.0.4
   "@types/react-dom": ^19.0.2

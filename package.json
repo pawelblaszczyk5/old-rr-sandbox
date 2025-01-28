@@ -64,9 +64,6 @@
 			"eslint-import-resolver-typescript>eslint-plugin-import": "-",
 			"react": "catalog:",
 			"react-dom": "catalog:"
-		},
-		"patchedDependencies": {
-			"react-router": "patches/react-router.patch"
 		}
 	}
 }

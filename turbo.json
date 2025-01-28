@@ -2,21 +2,18 @@
 	"$schema": "https://turbo.build/schema.json",
 	"ui": "tui",
 	"tasks": {
-		"generate-stylesheet": {
-			"dependsOn": ["^build"]
-		},
 		"transit": {
 			"dependsOn": ["^transit"]
 		},
 		"lint": {
-			"dependsOn": ["^transit", "^build", "generate-stylesheet"]
+			"dependsOn": ["^transit", "^build"]
 		},
 		"lint:fix": {
-			"dependsOn": ["^transit", "^build", "generate-stylesheet"],
+			"dependsOn": ["^transit", "^build"],
 			"cache": false
 		},
 		"build": {
-			"dependsOn": ["^build", "generate-stylesheet"],
+			"dependsOn": ["^build"],
 			"outputs": ["build/**", "!build/styles.css"]
 		},
 		"typecheck": {

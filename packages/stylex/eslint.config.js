@@ -9,15 +9,11 @@ export default [
 			},
 		},
 	},
-	{
-		ignores: ["bin.js"],
-	},
 	...core,
 	{
-		files: ["src/index.ts"],
+		files: ["src/entry.ts"],
 		rules: {
-			"canonical/filename-no-index": "off",
-			"unicorn/no-process-exit": "off",
+			"import-x/no-default-export": "off",
 		},
 	},
 ];

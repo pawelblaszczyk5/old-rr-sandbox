@@ -1,6 +1,15 @@
 import { useState } from "react";
 
-import { css } from "@moneytor/css";
+import stylex from "@moneytor/stylex";
+import { colors } from "@moneytor/theme/colors.stylex";
+
+const styles = stylex.create({
+	button: {
+		backgroundColor: "#aeaeae",
+		border: "none",
+		color: colors.primary,
+	},
+});
 
 export const Button = () => {
 	const [count, setCount] = useState(0);
@@ -12,8 +21,8 @@ export const Button = () => {
 					return count + 1;
 				});
 			}}
-			style={css({ "--background": "var(--color_gray6)" })}
 			type="button"
+			{...stylex.props(styles.button)}
 		>
 			Increase test: {count}
 		</button>

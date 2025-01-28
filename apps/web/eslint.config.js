@@ -11,9 +11,6 @@ export default [
 			},
 		},
 	},
-	{
-		ignores: [".tokenami/tokenami.env.d.ts"],
-	},
 	...core,
 	...react,
 	...node,
@@ -24,17 +21,10 @@ export default [
 			"lingui.config.ts",
 			"app/routes.ts",
 			"app/server.ts",
-			".tokenami/tokenami.config.ts",
 			"app/entry.server.tsx",
 		],
 		rules: {
 			"import-x/no-default-export": "off",
-		},
-	},
-	{
-		files: [".tokenami/tokenami.env.d.ts"],
-		rules: {
-			"@typescript-eslint/no-empty-object-type": "off",
 		},
 	},
 	{

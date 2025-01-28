@@ -10,23 +10,8 @@ export default [
 			},
 		},
 	},
-	{
-		ignores: [".tokenami/tokenami.env.d.ts"],
-	},
 	...core,
 	...react,
-	{
-		files: [".tokenami/tokenami.config.ts"],
-		rules: {
-			"import-x/no-default-export": "off",
-		},
-	},
-	{
-		files: [".tokenami/tokenami.env.d.ts"],
-		rules: {
-			"@typescript-eslint/no-empty-object-type": "off",
-		},
-	},
 	{
 		rules: {
 			"unicorn/prevent-abbreviations": [

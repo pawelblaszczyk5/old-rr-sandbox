@@ -1,10 +1,12 @@
 import { Outlet, Scripts, ScrollRestoration, useRouteLoaderData } from "react-router";
 
+import type { AppLoadContext } from "#app/declarations/react-router-context.js";
+
 import type { Route } from "./+types/root.js";
 
-import tokenamiStylesheet from "#app/styles.css?url";
+import stylesheet from "#app/styles.css?url";
 
-export const loader = ({ context }: Route.LoaderArgs) => {
+export const loader = ({ context }: Route.LoaderArgs & { context: AppLoadContext }) => {
 	return {
 		language: context.language,
 	};
@@ -18,7 +20,7 @@ export const Layout = ({ children }: Readonly<{ children: React.ReactNode }>) =>
 			<head>
 				<meta charSet="utf-8" />
 				<meta content="width=device-width, initial-scale=1" name="viewport" />
-				<link href={tokenamiStylesheet} rel="stylesheet" />
+				<link href={stylesheet} rel="stylesheet" />
 			</head>
 			<body>
 				{children}

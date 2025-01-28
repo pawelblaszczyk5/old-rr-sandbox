@@ -22,7 +22,7 @@
 		"build": "tsc --noCheck",
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",
-		"typecheck": "tsc --noEmit"
+		"typecheck": "tsc --build --noEmit"
 	},
 	"dependencies": {
 		"commonality": "catalog:"

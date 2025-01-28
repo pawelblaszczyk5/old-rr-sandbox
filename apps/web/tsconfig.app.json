@@ -3,8 +3,7 @@
 	"compilerOptions": {
 		"jsx": "preserve",
 		"types": ["node", "vite/client"],
-		"plugins": [{ "name": "@tokenami/ts-plugin" }],
 		"rootDirs": [".", "./.react-router/types"]
 	},
-	"include": ["app", ".tokenami/tokenami.config.ts", ".tokenami/tokenami.env.d.ts", ".react-router/types"]
+	"include": ["app", ".react-router/types"]
 }

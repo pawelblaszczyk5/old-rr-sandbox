@@ -10,10 +10,4 @@ export default [
 		},
 	},
 	...core,
-	{
-		files: ["src/index.ts"],
-		rules: {
-			"canonical/filename-no-index": "off",
-		},
-	},
 ];

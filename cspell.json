@@ -12,7 +12,7 @@
 		"multitenancy",
 		"pawelblaszczyk",
 		"stylesheet",
-		"tokenami",
+		"stylex",
 		"typecheck",
 		"unopinionated"
 	],
@@ -26,6 +26,7 @@
 		"nuqs",
 		"pipeable",
 		"predev",
+		"stylexjs",
 		"taze",
 		"tseslint",
 		"xyflow"

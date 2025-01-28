@@ -11,9 +11,9 @@ export default [
 	},
 	...core,
 	{
-		files: ["src/index.ts"],
+		files: ["src/entry.ts"],
 		rules: {
-			"canonical/filename-no-index": "off",
+			"import-x/no-default-export": "off",
 		},
 	},
 ];

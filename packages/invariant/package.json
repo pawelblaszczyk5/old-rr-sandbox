@@ -14,14 +14,14 @@
 		"#src/*": "./build/src/*"
 	},
 	"exports": {
-		".": "./build/src/index.js"
+		".": "./build/src/entry.js"
 	},
 	"scripts": {
 		"build": "tsc --noCheck",
 		"dev": "tsc --noCheck",
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",
-		"typecheck": "tsc --noEmit"
+		"typecheck": "tsc --build --noEmit"
 	},
 	"devDependencies": {
 		"@moneytor/eslint-config": "workspace:0.0.1",

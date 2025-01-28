@@ -17,5 +17,4 @@ pnpm-debug.log*
 .env
 
 # apps/web specific
-/apps/web/app/styles.css
 /apps/web/.react-router/
