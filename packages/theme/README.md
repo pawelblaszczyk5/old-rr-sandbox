@@ -1,1 +1,1 @@
-# @moneytor/invariant
+# @moneytor/theme
