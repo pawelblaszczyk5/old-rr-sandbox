@@ -14,10 +14,10 @@ catalog:
   "@types/node": ^22.12.0
   "@types/react": ^19.0.8
   "@types/react-dom": ^19.0.3
-  babel-plugin-react-compiler: 0.0.0-experimental-e4f4f9a-20250127
+  babel-plugin-react-compiler: 0.0.0-experimental-e4f4f9a-20250128
   commonality: ^0.2.63
   commonality-checks-recommended: ^0.0.40
-  eslint-plugin-react-compiler: 0.0.0-experimental-e4f4f9a-20250127
+  eslint-plugin-react-compiler: 0.0.0-experimental-e4f4f9a-20250128
   react: ^19.0.0
   react-dom: ^19.0.0
   react-router: ^7.1.3
