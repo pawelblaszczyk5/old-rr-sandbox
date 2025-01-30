@@ -38,10 +38,10 @@
 		"turbo": "2.3.4",
 		"typescript": "catalog:"
 	},
-	"packageManager": "pnpm@10.0.0",
+	"packageManager": "pnpm@10.1.0",
 	"engines": {
-		"node": "23.6.1",
-		"pnpm": "10.0.0"
+		"node": "23.7.0",
+		"pnpm": "10.1.0"
 	},
 	"pnpm": {
 		"onlyBuiltDependencies": [
